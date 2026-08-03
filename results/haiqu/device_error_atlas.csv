@@ -1,0 +1,10 @@
+kind,channel,physical_qubits,coherent_magnitude,stochastic_magnitude,amplitude_damping,dominant_pauli_generator,recommended_mitigation,model_source,trained_model
+node,q0,[0],0.047616591958878386,0.006910455514571106,0.013163868776313115,alpha_Y,"calibration/frame coherent correction, then validate",artifact:ridge_1q_256_readout_corrected.npz,True
+node,q1,[1],0.0847280096533135,0.008872736930453715,0.004901755993656047,alpha_Y,"calibration/frame coherent correction, then validate",artifact:ridge_1q_256_readout_corrected.npz,True
+node,q2,[2],0.09591097041628929,0.006320358789407264,0.012750954147770603,alpha_Y,"calibration/frame coherent correction, then validate",artifact:ridge_1q_256_readout_corrected.npz,True
+node,q3,[3],0.04511820816960732,0.007306857712705088,0.004959983072247556,alpha_Z,"calibration/frame coherent correction, then validate",artifact:ridge_1q_256_readout_corrected.npz,True
+node,q4,[4],0.039219166650061366,0.007963343035059764,0.00011181977614094923,alpha_Y,"calibration/frame coherent correction, then validate",artifact:ridge_1q_256_readout_corrected.npz,True
+edge,q0-q1,"[0, 1]",0.042713087658917556,0.010812086951491998,0.0,alpha_ZI,"calibration/frame coherent correction, then validate",artifact:ridge_2q_256_readout_corrected.npz,True
+edge,q1-q2,"[1, 2]",0.027867922458908182,0.003765877690574725,0.0,alpha_ZZ,"calibration/frame coherent correction, then validate",artifact:ridge_2q_256_readout_corrected.npz,True
+edge,q2-q3,"[2, 3]",0.030930967145580253,0.007885391286213916,0.0,alpha_IZ,"calibration/frame coherent correction, then validate",artifact:ridge_2q_256_readout_corrected.npz,True
+edge,q3-q4,"[3, 4]",0.09736135765525736,0.010416246738997869,0.0,alpha_ZI,"calibration/frame coherent correction, then validate",artifact:ridge_2q_256_readout_corrected.npz,True

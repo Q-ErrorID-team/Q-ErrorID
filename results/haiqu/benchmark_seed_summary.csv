@@ -1,0 +1,6 @@
+scenario,repeat_index,seed,problem_count,tvd_to_ideal,success_probability,hellinger_fidelity
+ideal_simulation,0,22027,16,0.0,1.0,1.0
+raw_haiqu_execution,0,22027,16,0.02880859375,0.97119140625,0.97119140625
+calibrated_readout_mitigation_only,0,22027,16,0.011183160861604008,0.988816839138396,0.988816839138396
+learned_generator_correction_only,0,22027,16,0.0,1.0,1.0
+learned_readout_plus_generator_correction,0,22027,16,0.011183160861604008,0.988816839138396,0.988816839138396

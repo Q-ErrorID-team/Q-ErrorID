@@ -1,0 +1,792 @@
+{
+  "schema_version": "1.1",
+  "created_by": "scripts/train_models.py",
+  "primary_checkpoint_format": "portable NumPy NPZ payload; .pt is retained as the requested artifact name and does not contain Python pickle",
+  "models": {
+    "1q": {
+      "artifact": "artifacts/models/ridge_1q.pt",
+      "kind": "ridge"
+    },
+    "2q": {
+      "artifact": "artifacts/models/ridge_2q.pt",
+      "kind": "ridge"
+    }
+  },
+  "families": {
+    "1q": {
+      "architectures": {
+        "QNN": {
+          "backend": "numpy_exact_statevector",
+          "training": "stochastic_variational_search_with_exact_ridge_readout",
+          "input_dim": 18,
+          "n_qubits": 4,
+          "n_layers": 2,
+          "encoding": "angle_data_reuploading",
+          "entanglement": "ring",
+          "measurements": [
+            "Z0",
+            "Z1",
+            "Z2",
+            "Z3",
+            "Z0Z1",
+            "Z1Z2",
+            "Z2Z3",
+            "Z3Z0"
+          ],
+          "output_names": [
+            "alpha_X",
+            "alpha_Y",
+            "alpha_Z",
+            "gamma_X",
+            "gamma_Y",
+            "gamma_Z",
+            "kappa_down"
+          ],
+          "circuit_parameters": 16,
+          "trainable_parameters": 79,
+          "auxiliary_classifier": true
+        },
+        "MLP": {
+          "kind": "mlp",
+          "output_names": [
+            "alpha_X",
+            "alpha_Y",
+            "alpha_Z",
+            "gamma_X",
+            "gamma_Y",
+            "gamma_Z",
+            "kappa_down"
+          ],
+          "trainable_parameters": 59,
+          "physical_output_projection": {
+            "alpha_X": [
+              -0.15,
+              0.15
+            ],
+            "alpha_Y": [
+              -0.15,
+              0.15
+            ],
+            "alpha_Z": [
+              -0.15,
+              0.15
+            ],
+            "gamma_X": [
+              0.0,
+              0.03
+            ],
+            "gamma_Y": [
+              0.0,
+              0.03
+            ],
+            "gamma_Z": [
+              0.0,
+              0.03
+            ],
+            "kappa_down": [
+              0.0,
+              0.05
+            ]
+          },
+          "hidden_units": 2
+        },
+        "Ridge": {
+          "kind": "ridge",
+          "output_names": [
+            "alpha_X",
+            "alpha_Y",
+            "alpha_Z",
+            "gamma_X",
+            "gamma_Y",
+            "gamma_Z",
+            "kappa_down"
+          ],
+          "trainable_parameters": 133,
+          "physical_output_projection": {
+            "alpha_X": [
+              -0.15,
+              0.15
+            ],
+            "alpha_Y": [
+              -0.15,
+              0.15
+            ],
+            "alpha_Z": [
+              -0.15,
+              0.15
+            ],
+            "gamma_X": [
+              0.0,
+              0.03
+            ],
+            "gamma_Y": [
+              0.0,
+              0.03
+            ],
+            "gamma_Z": [
+              0.0,
+              0.03
+            ],
+            "kappa_down": [
+              0.0,
+              0.05
+            ]
+          }
+        },
+        "QNN-shot-robust": {
+          "backend": "numpy_exact_statevector",
+          "training": "stochastic_variational_search_with_exact_ridge_readout",
+          "input_dim": 18,
+          "n_qubits": 4,
+          "n_layers": 2,
+          "encoding": "angle_data_reuploading",
+          "entanglement": "ring",
+          "measurements": [
+            "Z0",
+            "Z1",
+            "Z2",
+            "Z3",
+            "Z0Z1",
+            "Z1Z2",
+            "Z2Z3",
+            "Z3Z0"
+          ],
+          "output_names": [
+            "alpha_X",
+            "alpha_Y",
+            "alpha_Z",
+            "gamma_X",
+            "gamma_Y",
+            "gamma_Z",
+            "kappa_down"
+          ],
+          "circuit_parameters": 16,
+          "trainable_parameters": 79,
+          "auxiliary_classifier": true
+        }
+      },
+      "test_metrics": {
+        "QNN": {
+          "parameter_mae": 0.037736812528084245,
+          "parameter_rmse": 0.05842557317991408,
+          "mean_r2": -0.10494897792968512,
+          "choi_fidelity": 0.9898926221512431,
+          "ptm_error": 0.10435782980361573,
+          "heldout_expectation_rmse": 0.06644141481137761,
+          "channel_family_accuracy": 0.140625,
+          "coherent_compensation_improvement": -0.00010176099876278537,
+          "inference_seconds_per_sample": 9.903343737960313e-06,
+          "channel_samples_evaluated": 64
+        },
+        "MLP": {
+          "parameter_mae": 0.023087250659840446,
+          "parameter_rmse": 0.03488326246943816,
+          "mean_r2": 0.2555103185000858,
+          "choi_fidelity": 0.9937073174274739,
+          "ptm_error": 0.059896917345606544,
+          "heldout_expectation_rmse": 0.03862876681581426,
+          "channel_family_accuracy": 0.90625,
+          "coherent_compensation_improvement": 0.003470135383183486,
+          "inference_seconds_per_sample": 5.226984370665377e-06,
+          "channel_samples_evaluated": 64
+        },
+        "Ridge": {
+          "parameter_mae": 0.0012456715114500026,
+          "parameter_rmse": 0.0017114060616746922,
+          "mean_r2": 0.9835839019695215,
+          "choi_fidelity": 0.9998151180823605,
+          "ptm_error": 0.004343488826952558,
+          "heldout_expectation_rmse": 0.0027494458873513934,
+          "channel_family_accuracy": 1.0,
+          "coherent_compensation_improvement": 0.005334562016106093,
+          "inference_seconds_per_sample": 1.0803593681885104e-06,
+          "channel_samples_evaluated": 64
+        }
+      },
+      "per_parameter_test_metrics": {
+        "QNN": {
+          "alpha_X": {
+            "mae": 0.07493476134571367,
+            "rmse": 0.08673869473421897,
+            "r2": -0.1677469839939365
+          },
+          "alpha_Y": {
+            "mae": 0.07240768074138612,
+            "rmse": 0.0846934646490801,
+            "r2": -0.02320793675411137
+          },
+          "alpha_Z": {
+            "mae": 0.08023442847415638,
+            "rmse": 0.09333959789878198,
+            "r2": -0.05040987483442594
+          },
+          "gamma_X": {
+            "mae": 0.008078420485093477,
+            "rmse": 0.00944938560291688,
+            "r2": -0.09441360847786728
+          },
+          "gamma_Y": {
+            "mae": 0.007506535944297801,
+            "rmse": 0.009068072887308943,
+            "r2": -0.18532136992124792
+          },
+          "gamma_Z": {
+            "mae": 0.007907915980927728,
+            "rmse": 0.009456919125062475,
+            "r2": -0.1695051350869201
+          },
+          "kappa_down": {
+            "mae": 0.013087944725014542,
+            "rmse": 0.015000480057085555,
+            "r2": -0.04403793643928666
+          }
+        },
+        "MLP": {
+          "alpha_X": {
+            "mae": 0.04268406115018536,
+            "rmse": 0.0506500045116743,
+            "r2": 0.6018176860570221
+          },
+          "alpha_Y": {
+            "mae": 0.02709168563694158,
+            "rmse": 0.032253032993713425,
+            "r2": 0.8516097990001574
+          },
+          "alpha_Z": {
+            "mae": 0.05606148420219137,
+            "rmse": 0.06674686085609445,
+            "r2": 0.4628585893509023
+          },
+          "gamma_X": {
+            "mae": 0.007775637976434037,
+            "rmse": 0.009020442825791602,
+            "r2": 0.0026902666527393038
+          },
+          "gamma_Y": {
+            "mae": 0.007332938926733094,
+            "rmse": 0.008676638255189922,
+            "r2": -0.085198269157017
+          },
+          "gamma_Z": {
+            "mae": 0.007752374611746814,
+            "rmse": 0.008786187619704731,
+            "r2": -0.009493969533660662
+          },
+          "kappa_down": {
+            "mae": 0.01291257211465088,
+            "rmse": 0.014940546912329202,
+            "r2": -0.03571187286954269
+          }
+        },
+        "Ridge": {
+          "alpha_X": {
+            "mae": 0.0013578056707110372,
+            "rmse": 0.001775136324750316,
+            "r2": 0.9995109126710283
+          },
+          "alpha_Y": {
+            "mae": 0.0014557128410928309,
+            "rmse": 0.0019618274648773833,
+            "r2": 0.9994509830891528
+          },
+          "alpha_Z": {
+            "mae": 0.0016364072376360522,
+            "rmse": 0.0022218763930138253,
+            "r2": 0.9994047947763995
+          },
+          "gamma_X": {
+            "mae": 0.0013148081776244891,
+            "rmse": 0.0015820859622754245,
+            "r2": 0.9693214735720996
+          },
+          "gamma_Y": {
+            "mae": 0.0013713308047088879,
+            "rmse": 0.001665533150936576,
+            "r2": 0.9600135662634984
+          },
+          "gamma_Z": {
+            "mae": 0.0014232950055994196,
+            "rmse": 0.001800631441096446,
+            "r2": 0.9576013097016797
+          },
+          "kappa_down": {
+            "mae": 0.00016034084277730072,
+            "rmse": 0.00021562472207058714,
+            "r2": 0.9997842737127924
+          }
+        }
+      },
+      "validation_parameter_mae": {
+        "QNN": 0.03401482994114231,
+        "QNN-shot-robust@1024": 0.034418713879150076,
+        "MLP": 0.024179510282298502,
+        "Ridge": 0.001224230636537508
+      },
+      "best_qnn_validation_loss": {
+        "exact": 0.0029199604128175996,
+        "shot_robust_1024": 0.0029788920419908213
+      },
+      "model_paths": {
+        "qnn_exact": "artifacts/models/qnn_1q_exact.pt",
+        "qnn_shot_robust": "artifacts/models/qnn_1q_shot_robust.pt",
+        "qnn_primary": "artifacts/models/qnn_1q.pt",
+        "ridge": "artifacts/models/ridge_1q.pt",
+        "mlp": "artifacts/models/mlp_1q.pt",
+        "mlp_shot_robust": "artifacts/models/mlp_1q_shot_robust.pt",
+        "ridge_deployment_256": "artifacts/models/ridge_1q_256.npz",
+        "ridge_deployment_1024": "artifacts/models/ridge_1q_1024.npz",
+        "ridge_deployment_4096": "artifacts/models/ridge_1q_4096.npz",
+        "ridge_deployment_8192": "artifacts/models/ridge_1q_8192.npz",
+        "ridge_readout_corrected_256": "artifacts/models/ridge_1q_256_readout_corrected.npz",
+        "ridge_readout_corrected_1024": "artifacts/models/ridge_1q_1024_readout_corrected.npz",
+        "ridge_readout_corrected_4096": "artifacts/models/ridge_1q_4096_readout_corrected.npz",
+        "ridge_readout_corrected_8192": "artifacts/models/ridge_1q_8192_readout_corrected.npz"
+      },
+      "qiskit_circuit_paths": {
+        "qasm": "artifacts/circuits/qnn_1q_inference.qasm",
+        "template": "artifacts/circuits/qnn_1q_inference.qiskit.json"
+      }
+    },
+    "2q": {
+      "architectures": {
+        "QNN": {
+          "backend": "numpy_exact_statevector",
+          "training": "stochastic_variational_search_with_exact_ridge_readout",
+          "input_dim": 80,
+          "n_qubits": 4,
+          "n_layers": 2,
+          "encoding": "angle_data_reuploading",
+          "entanglement": "ring",
+          "measurements": [
+            "Z0",
+            "Z1",
+            "Z2",
+            "Z3",
+            "Z0Z1",
+            "Z1Z2",
+            "Z2Z3",
+            "Z3Z0"
+          ],
+          "output_names": [
+            "alpha_ZI",
+            "alpha_IZ",
+            "alpha_ZX",
+            "alpha_ZZ",
+            "gamma_ZI",
+            "gamma_IZ",
+            "gamma_ZX",
+            "gamma_ZZ"
+          ],
+          "circuit_parameters": 16,
+          "trainable_parameters": 88,
+          "auxiliary_classifier": true
+        },
+        "MLP": {
+          "kind": "mlp",
+          "output_names": [
+            "alpha_ZI",
+            "alpha_IZ",
+            "alpha_ZX",
+            "alpha_ZZ",
+            "gamma_ZI",
+            "gamma_IZ",
+            "gamma_ZX",
+            "gamma_ZZ"
+          ],
+          "trainable_parameters": 97,
+          "physical_output_projection": {
+            "alpha_ZI": [
+              -0.15,
+              0.15
+            ],
+            "alpha_IZ": [
+              -0.15,
+              0.15
+            ],
+            "alpha_ZX": [
+              -0.15,
+              0.15
+            ],
+            "alpha_ZZ": [
+              -0.15,
+              0.15
+            ],
+            "gamma_ZI": [
+              0.0,
+              0.03
+            ],
+            "gamma_IZ": [
+              0.0,
+              0.03
+            ],
+            "gamma_ZX": [
+              0.0,
+              0.03
+            ],
+            "gamma_ZZ": [
+              0.0,
+              0.03
+            ]
+          },
+          "hidden_units": 1
+        },
+        "Ridge": {
+          "kind": "ridge",
+          "output_names": [
+            "alpha_ZI",
+            "alpha_IZ",
+            "alpha_ZX",
+            "alpha_ZZ",
+            "gamma_ZI",
+            "gamma_IZ",
+            "gamma_ZX",
+            "gamma_ZZ"
+          ],
+          "trainable_parameters": 648,
+          "physical_output_projection": {
+            "alpha_ZI": [
+              -0.15,
+              0.15
+            ],
+            "alpha_IZ": [
+              -0.15,
+              0.15
+            ],
+            "alpha_ZX": [
+              -0.15,
+              0.15
+            ],
+            "alpha_ZZ": [
+              -0.15,
+              0.15
+            ],
+            "gamma_ZI": [
+              0.0,
+              0.03
+            ],
+            "gamma_IZ": [
+              0.0,
+              0.03
+            ],
+            "gamma_ZX": [
+              0.0,
+              0.03
+            ],
+            "gamma_ZZ": [
+              0.0,
+              0.03
+            ]
+          }
+        },
+        "QNN-shot-robust": {
+          "backend": "numpy_exact_statevector",
+          "training": "stochastic_variational_search_with_exact_ridge_readout",
+          "input_dim": 80,
+          "n_qubits": 4,
+          "n_layers": 2,
+          "encoding": "angle_data_reuploading",
+          "entanglement": "ring",
+          "measurements": [
+            "Z0",
+            "Z1",
+            "Z2",
+            "Z3",
+            "Z0Z1",
+            "Z1Z2",
+            "Z2Z3",
+            "Z3Z0"
+          ],
+          "output_names": [
+            "alpha_ZI",
+            "alpha_IZ",
+            "alpha_ZX",
+            "alpha_ZZ",
+            "gamma_ZI",
+            "gamma_IZ",
+            "gamma_ZX",
+            "gamma_ZZ"
+          ],
+          "circuit_parameters": 16,
+          "trainable_parameters": 88,
+          "auxiliary_classifier": true
+        }
+      },
+      "test_metrics": {
+        "QNN": {
+          "parameter_mae": 0.044752707283742255,
+          "parameter_rmse": 0.06755066650085687,
+          "mean_r2": -0.07314587262459905,
+          "choi_fidelity": 0.9859432256391788,
+          "ptm_error": 0.13124580501018293,
+          "heldout_expectation_rmse": 0.06760809231162218,
+          "channel_family_accuracy": 0.125,
+          "coherent_compensation_improvement": -0.00021327464785101993,
+          "inference_seconds_per_sample": 1.2955520825623049e-05,
+          "channel_samples_evaluated": 48
+        },
+        "MLP": {
+          "parameter_mae": 0.037242415422984586,
+          "parameter_rmse": 0.057797902074589555,
+          "mean_r2": 0.09854116176223499,
+          "choi_fidelity": 0.9883912563443311,
+          "ptm_error": 0.11092707042521986,
+          "heldout_expectation_rmse": 0.05971774795488066,
+          "channel_family_accuracy": 0.5208333333333334,
+          "coherent_compensation_improvement": 0.0019735538621187937,
+          "inference_seconds_per_sample": 7.688125000034537e-06,
+          "channel_samples_evaluated": 48
+        },
+        "Ridge": {
+          "parameter_mae": 0.0017043562376555094,
+          "parameter_rmse": 0.0022757128401243998,
+          "mean_r2": 0.969272907228844,
+          "choi_fidelity": 0.9995831561180953,
+          "ptm_error": 0.006053156972444578,
+          "heldout_expectation_rmse": 0.003777380936438876,
+          "channel_family_accuracy": 1.0,
+          "coherent_compensation_improvement": 0.00792975118495551,
+          "inference_seconds_per_sample": 1.335520854202817e-06,
+          "channel_samples_evaluated": 48
+        }
+      },
+      "per_parameter_test_metrics": {
+        "QNN": {
+          "alpha_ZI": {
+            "mae": 0.08695036168358505,
+            "rmse": 0.09856924390146693,
+            "r2": -0.025304972612852916
+          },
+          "alpha_IZ": {
+            "mae": 0.08675865179448701,
+            "rmse": 0.10061221142655591,
+            "r2": -0.13307116062226387
+          },
+          "alpha_ZX": {
+            "mae": 0.08334036130241158,
+            "rmse": 0.09692278684556438,
+            "r2": 0.0156615846182091
+          },
+          "alpha_ZZ": {
+            "mae": 0.07144584624144042,
+            "rmse": 0.08350800029209789,
+            "r2": 0.0006914844064821457
+          },
+          "gamma_ZI": {
+            "mae": 0.005570886231630145,
+            "rmse": 0.0068448392944405025,
+            "r2": -0.05461545437337656
+          },
+          "gamma_IZ": {
+            "mae": 0.0072647854452702965,
+            "rmse": 0.008779598217033158,
+            "r2": -0.07251664221380394
+          },
+          "gamma_ZX": {
+            "mae": 0.008272852668348176,
+            "rmse": 0.009311622650444072,
+            "r2": -0.10950551025263722
+          },
+          "gamma_ZZ": {
+            "mae": 0.008417912902765291,
+            "rmse": 0.009368842902503133,
+            "r2": -0.20650630994654917
+          }
+        },
+        "MLP": {
+          "alpha_ZI": {
+            "mae": 0.05864969410112502,
+            "rmse": 0.0697183120108618,
+            "r2": 0.487063102696493
+          },
+          "alpha_IZ": {
+            "mae": 0.08258018755730102,
+            "rmse": 0.09549433701003027,
+            "r2": -0.020730359350071614
+          },
+          "alpha_ZX": {
+            "mae": 0.07590398322323039,
+            "rmse": 0.09028318601616672,
+            "r2": 0.14590456323898704
+          },
+          "alpha_ZZ": {
+            "mae": 0.05237826520305542,
+            "rmse": 0.06567236068001235,
+            "r2": 0.3819712536900056
+          },
+          "gamma_ZI": {
+            "mae": 0.0055936094040540596,
+            "rmse": 0.0067952986998047315,
+            "r2": -0.03940481050462252
+          },
+          "gamma_IZ": {
+            "mae": 0.00711672107582453,
+            "rmse": 0.008693658171095596,
+            "r2": -0.05162251726455769
+          },
+          "gamma_ZX": {
+            "mae": 0.007739013360836485,
+            "rmse": 0.008876295906750318,
+            "r2": -0.008189733954125256
+          },
+          "gamma_ZZ": {
+            "mae": 0.007977849458449753,
+            "rmse": 0.008972814653531197,
+            "r2": -0.10666220445422869
+          }
+        },
+        "Ridge": {
+          "alpha_ZI": {
+            "mae": 0.0017293450516706558,
+            "rmse": 0.002400882449443728,
+            "r2": 0.9993917081369499
+          },
+          "alpha_IZ": {
+            "mae": 0.002016233958291791,
+            "rmse": 0.0028481060151887786,
+            "r2": 0.9990920371103109
+          },
+          "alpha_ZX": {
+            "mae": 0.001743719207147108,
+            "rmse": 0.002598207612986839,
+            "r2": 0.999292640239781
+          },
+          "alpha_ZZ": {
+            "mae": 0.0018183496936345824,
+            "rmse": 0.002384638717561327,
+            "r2": 0.9991851294880344
+          },
+          "gamma_ZI": {
+            "mae": 0.0017164646887639686,
+            "rmse": 0.0020768155955165003,
+            "r2": 0.902912461168493
+          },
+          "gamma_IZ": {
+            "mae": 0.001540789994778165,
+            "rmse": 0.001905609875467028,
+            "r2": 0.9494730892288905
+          },
+          "gamma_ZX": {
+            "mae": 0.001489634978268737,
+            "rmse": 0.0019026017350027452,
+            "r2": 0.9536793650198911
+          },
+          "gamma_ZZ": {
+            "mae": 0.0015803123286890648,
+            "rmse": 0.0018850509396529053,
+            "r2": 0.9511568274383999
+          }
+        }
+      },
+      "validation_parameter_mae": {
+        "QNN": 0.037200059217185076,
+        "QNN-shot-robust@1024": 0.038372214217829194,
+        "MLP": 0.03421031542381588,
+        "Ridge": 0.00150409557252137
+      },
+      "best_qnn_validation_loss": {
+        "exact": 0.0032252796866837855,
+        "shot_robust_1024": 0.003372787539715844
+      },
+      "model_paths": {
+        "qnn_exact": "artifacts/models/qnn_2q_exact.pt",
+        "qnn_shot_robust": "artifacts/models/qnn_2q_shot_robust.pt",
+        "qnn_primary": "artifacts/models/qnn_2q.pt",
+        "ridge": "artifacts/models/ridge_2q.pt",
+        "mlp": "artifacts/models/mlp_2q.pt",
+        "mlp_shot_robust": "artifacts/models/mlp_2q_shot_robust.pt",
+        "ridge_deployment_256": "artifacts/models/ridge_2q_256.npz",
+        "ridge_deployment_1024": "artifacts/models/ridge_2q_1024.npz",
+        "ridge_deployment_4096": "artifacts/models/ridge_2q_4096.npz",
+        "ridge_deployment_8192": "artifacts/models/ridge_2q_8192.npz",
+        "ridge_readout_corrected_256": "artifacts/models/ridge_2q_256_readout_corrected.npz",
+        "ridge_readout_corrected_1024": "artifacts/models/ridge_2q_1024_readout_corrected.npz",
+        "ridge_readout_corrected_4096": "artifacts/models/ridge_2q_4096_readout_corrected.npz",
+        "ridge_readout_corrected_8192": "artifacts/models/ridge_2q_8192_readout_corrected.npz"
+      },
+      "qiskit_circuit_paths": {
+        "qasm": "artifacts/circuits/qnn_2q_inference.qasm",
+        "template": "artifacts/circuits/qnn_2q_inference.qiskit.json"
+      }
+    }
+  },
+  "fair_comparison": [
+    {
+      "family": "1q",
+      "model": "QNN",
+      "trainable_parameters": 79,
+      "training_time_seconds": 0.05107835499984503,
+      "inference_time_seconds_per_sample": 9.903343737960313e-06,
+      "parameter_mae": 0.037736812528084245,
+      "choi_fidelity": 0.9898926221512431,
+      "ptm_error": 0.10435782980361573,
+      "shot_robustness_256_mae": 0.039396828042893836
+    },
+    {
+      "family": "1q",
+      "model": "MLP",
+      "trainable_parameters": 59,
+      "training_time_seconds": 0.6242770280005061,
+      "inference_time_seconds_per_sample": 5.226984370665377e-06,
+      "parameter_mae": 0.023087250659840446,
+      "choi_fidelity": 0.9937073174274739,
+      "ptm_error": 0.059896917345606544,
+      "shot_robustness_256_mae": 0.050374316514987506
+    },
+    {
+      "family": "1q",
+      "model": "Ridge",
+      "trainable_parameters": 133,
+      "training_time_seconds": 0.00016940199930104427,
+      "inference_time_seconds_per_sample": 1.0803593681885104e-06,
+      "parameter_mae": 0.0012456715114500026,
+      "choi_fidelity": 0.9998151180823605,
+      "ptm_error": 0.004343488826952558,
+      "shot_robustness_256_mae": NaN
+    },
+    {
+      "family": "2q",
+      "model": "QNN",
+      "trainable_parameters": 88,
+      "training_time_seconds": 0.06199001499953738,
+      "inference_time_seconds_per_sample": 1.2955520825623049e-05,
+      "parameter_mae": 0.044752707283742255,
+      "choi_fidelity": 0.9859432256391788,
+      "ptm_error": 0.13124580501018293,
+      "shot_robustness_256_mae": 0.04658918325244186
+    },
+    {
+      "family": "2q",
+      "model": "MLP",
+      "trainable_parameters": 97,
+      "training_time_seconds": 0.031123513999773422,
+      "inference_time_seconds_per_sample": 7.688125000034537e-06,
+      "parameter_mae": 0.037242415422984586,
+      "choi_fidelity": 0.9883912563443311,
+      "ptm_error": 0.11092707042521986,
+      "shot_robustness_256_mae": 0.07100892411451937
+    },
+    {
+      "family": "2q",
+      "model": "Ridge",
+      "trainable_parameters": 648,
+      "training_time_seconds": 0.00027383800079405773,
+      "inference_time_seconds_per_sample": 1.335520854202817e-06,
+      "parameter_mae": 0.0017043562376555094,
+      "choi_fidelity": 0.9995831561180953,
+      "ptm_error": 0.006053156972444578,
+      "shot_robustness_256_mae": NaN
+    }
+  ],
+  "claims": {
+    "quantum_advantage": false,
+    "qnn_role": "backend-executed shallow quantum-inference demonstrator",
+    "runtime_integration": "diagnostic_features -> trained QNN circuit -> measured Z/ZZ observables -> saved classical readout"
+  },
+  "limitations": [
+    "The framework-light QNN uses an exact NumPy statevector, a seeded stochastic search over circuit angles, and an exact Ridge readout.",
+    "OpenQASM and a Qiskit/Haiqu parameter-binding template are exported with measurements. Local Aer/fake-backend execution is integrated; authenticated cloud effects must be reported from a real Haiqu run.",
+    "The 2Q model reconstructs the requested eight gate-specific coefficients and consumes local kappa values from prior 1Q calibration.",
+    "Exact PTM loss is implemented for evaluation but disabled during gradient training in the framework-light backend.",
+    "Results use synthetic local-generator channels and do not establish quantum advantage or out-of-distribution robustness."
+  ]
+}

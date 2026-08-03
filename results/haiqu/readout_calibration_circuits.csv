@@ -1,0 +1,27 @@
+circuit_name,calibration_type,calibration_key,physical_qubits,circuit_qubits,measurement_clbits,prepared_state,bitstring_order,calibration_round
+readout_cal_q0_prep_0,readout_assignment,q0,[0],[0],[0],0,"['0', '1']",0
+readout_cal_q0_prep_1,readout_assignment,q0,[0],[0],[0],1,"['0', '1']",0
+readout_cal_q1_prep_0,readout_assignment,q1,[1],[1],[1],0,"['0', '1']",0
+readout_cal_q1_prep_1,readout_assignment,q1,[1],[1],[1],1,"['0', '1']",0
+readout_cal_q2_prep_0,readout_assignment,q2,[2],[2],[2],0,"['0', '1']",0
+readout_cal_q2_prep_1,readout_assignment,q2,[2],[2],[2],1,"['0', '1']",0
+readout_cal_q3_prep_0,readout_assignment,q3,[3],[3],[3],0,"['0', '1']",0
+readout_cal_q3_prep_1,readout_assignment,q3,[3],[3],[3],1,"['0', '1']",0
+readout_cal_q4_prep_0,readout_assignment,q4,[4],[4],[4],0,"['0', '1']",0
+readout_cal_q4_prep_1,readout_assignment,q4,[4],[4],[4],1,"['0', '1']",0
+readout_cal_q0_q1_prep_00,readout_assignment,q0-q1,"[0, 1]","[0, 1]","[0, 1]",00,"['00', '01', '10', '11']",0
+readout_cal_q0_q1_prep_01,readout_assignment,q0-q1,"[0, 1]","[0, 1]","[0, 1]",01,"['00', '01', '10', '11']",0
+readout_cal_q0_q1_prep_10,readout_assignment,q0-q1,"[0, 1]","[0, 1]","[0, 1]",10,"['00', '01', '10', '11']",0
+readout_cal_q0_q1_prep_11,readout_assignment,q0-q1,"[0, 1]","[0, 1]","[0, 1]",11,"['00', '01', '10', '11']",0
+readout_cal_q1_q2_prep_00,readout_assignment,q1-q2,"[1, 2]","[1, 2]","[1, 2]",00,"['00', '01', '10', '11']",0
+readout_cal_q1_q2_prep_01,readout_assignment,q1-q2,"[1, 2]","[1, 2]","[1, 2]",01,"['00', '01', '10', '11']",0
+readout_cal_q1_q2_prep_10,readout_assignment,q1-q2,"[1, 2]","[1, 2]","[1, 2]",10,"['00', '01', '10', '11']",0
+readout_cal_q1_q2_prep_11,readout_assignment,q1-q2,"[1, 2]","[1, 2]","[1, 2]",11,"['00', '01', '10', '11']",0
+readout_cal_q2_q3_prep_00,readout_assignment,q2-q3,"[2, 3]","[2, 3]","[2, 3]",00,"['00', '01', '10', '11']",0
+readout_cal_q2_q3_prep_01,readout_assignment,q2-q3,"[2, 3]","[2, 3]","[2, 3]",01,"['00', '01', '10', '11']",0
+readout_cal_q2_q3_prep_10,readout_assignment,q2-q3,"[2, 3]","[2, 3]","[2, 3]",10,"['00', '01', '10', '11']",0
+readout_cal_q2_q3_prep_11,readout_assignment,q2-q3,"[2, 3]","[2, 3]","[2, 3]",11,"['00', '01', '10', '11']",0
+readout_cal_q3_q4_prep_00,readout_assignment,q3-q4,"[3, 4]","[3, 4]","[3, 4]",00,"['00', '01', '10', '11']",0
+readout_cal_q3_q4_prep_01,readout_assignment,q3-q4,"[3, 4]","[3, 4]","[3, 4]",01,"['00', '01', '10', '11']",0
+readout_cal_q3_q4_prep_10,readout_assignment,q3-q4,"[3, 4]","[3, 4]","[3, 4]",10,"['00', '01', '10', '11']",0
+readout_cal_q3_q4_prep_11,readout_assignment,q3-q4,"[3, 4]","[3, 4]","[3, 4]",11,"['00', '01', '10', '11']",0

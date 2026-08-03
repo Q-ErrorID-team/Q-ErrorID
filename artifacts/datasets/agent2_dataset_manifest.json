@@ -1,0 +1,49 @@
+{
+  "schema_version": "agent1-compatible-1.0",
+  "profile": "demo",
+  "files": [
+    {
+      "family": "1q",
+      "split": "train",
+      "path": "artifacts/datasets/1q_mixed_channel_train.npz",
+      "size": 256,
+      "feature_count": 18
+    },
+    {
+      "family": "1q",
+      "split": "validation",
+      "path": "artifacts/datasets/1q_mixed_channel_validation.npz",
+      "size": 64,
+      "feature_count": 18
+    },
+    {
+      "family": "1q",
+      "split": "test",
+      "path": "artifacts/datasets/1q_mixed_channel_test.npz",
+      "size": 64,
+      "feature_count": 18
+    },
+    {
+      "family": "2q",
+      "split": "train",
+      "path": "artifacts/datasets/2q_mixed_channel_train.npz",
+      "size": 192,
+      "feature_count": 80
+    },
+    {
+      "family": "2q",
+      "split": "validation",
+      "path": "artifacts/datasets/2q_mixed_channel_validation.npz",
+      "size": 48,
+      "feature_count": 80
+    },
+    {
+      "family": "2q",
+      "split": "test",
+      "path": "artifacts/datasets/2q_mixed_channel_test.npz",
+      "size": 48,
+      "feature_count": 80
+    }
+  ],
+  "generator_contract": "q_error_id.core.datasets.generate_dataset_split"
+}

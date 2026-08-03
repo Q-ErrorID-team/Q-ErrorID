@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "generator": "scripts/generate_datasets.py",
+  "profile": "demo",
+  "base_seed": 20260724,
+  "readout_confusion": {
+    "p_plus_to_minus": 0.018,
+    "p_minus_to_plus": 0.024
+  },
+  "files": [
+    {
+      "family": "1q_mixed_channel",
+      "split": "train",
+      "size": 256,
+      "seed": 20260724,
+      "path": "artifacts/datasets/1q_mixed_channel_train.npz",
+      "sha256": "5af384bf34552108279686e7884f52cdd4e9e44ac9153e39b6e6b0770d1ad1a9",
+      "feature_count": 18
+    },
+    {
+      "family": "1q_mixed_channel",
+      "split": "validation",
+      "size": 64,
+      "seed": 20270724,
+      "path": "artifacts/datasets/1q_mixed_channel_validation.npz",
+      "sha256": "d1af27fd6ef24fb7b15c42d630a1ecf7b16b8417b217ac5d71771fe3cd95a732",
+      "feature_count": 18
+    },
+    {
+      "family": "1q_mixed_channel",
+      "split": "test",
+      "size": 64,
+      "seed": 20280724,
+      "path": "artifacts/datasets/1q_mixed_channel_test.npz",
+      "sha256": "955f85fc6c0ff09f9e4f12e235f1f1285c15af6ff277d447f3c25570638c98b1",
+      "feature_count": 18
+    },
+    {
+      "family": "2q_mixed_channel",
+      "split": "train",
+      "size": 192,
+      "seed": 20360724,
+      "path": "artifacts/datasets/2q_mixed_channel_train.npz",
+      "sha256": "81bf37e5e1f5fe2145ffff30c6ecbabaf3b7c4e9393634ef2e1dcd57c8e4a382",
+      "feature_count": 80
+    },
+    {
+      "family": "2q_mixed_channel",
+      "split": "validation",
+      "size": 48,
+      "seed": 20370724,
+      "path": "artifacts/datasets/2q_mixed_channel_validation.npz",
+      "sha256": "f1ff90187c161ae3a05d3a6324f5248d61732412322b5d453872a089a721f439",
+      "feature_count": 80
+    },
+    {
+      "family": "2q_mixed_channel",
+      "split": "test",
+      "size": 48,
+      "seed": 20380724,
+      "path": "artifacts/datasets/2q_mixed_channel_test.npz",
+      "sha256": "46118d6cbd1bdf74e6cf4e266bfeac2a57a7d5950ec5039da96e2e4245c7e58b",
+      "feature_count": 80
+    }
+  ],
+  "identifiability_report": "results/core/identifiability_report.json",
+  "channel_validation": "results/core/channel_validation.csv",
+  "one_qubit_jacobian_rank": 7,
+  "two_qubit_jacobian_rank": 10,
+  "two_qubit_gate_specific_jacobian_rank": 8
+}

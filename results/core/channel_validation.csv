@@ -1,0 +1,17 @@
+family,sample,complete_positive,trace_preserving,hermiticity_preserving,minimum_choi_eigenvalue,trace_preservation_violation,hermiticity_violation
+1q_mixed_channel,0,True,True,True,0.009617867151620193,4.9447226916282755e-18,0.0
+1q_mixed_channel,1,True,True,True,0.0222806761428049,0.0,0.0
+1q_mixed_channel,2,True,True,True,0.006059047337389498,0.0,0.0
+1q_mixed_channel,3,True,True,True,0.028306199333839606,0.0,0.0
+1q_mixed_channel,4,True,True,True,0.0033733676375281435,1.962615573354719e-17,0.0
+1q_mixed_channel,5,True,True,True,0.03902732375601159,1.2266347333466993e-18,0.0
+1q_mixed_channel,6,True,True,True,0.02672414090548964,0.0,0.0
+1q_mixed_channel,7,True,True,True,0.029254473043812308,1.962615573354719e-17,0.0
+2q_mixed_channel,0,True,True,True,-1.2826674277929242e-17,2.2291365413083097e-16,0.0
+2q_mixed_channel,1,True,True,True,-7.5799995215111e-18,2.220990201242818e-16,0.0
+2q_mixed_channel,2,True,True,True,-1.4437767919955768e-17,1.1145513959121702e-16,0.0
+2q_mixed_channel,3,True,True,True,-9.077628075583218e-18,1.1102230246251565e-16,0.0
+2q_mixed_channel,4,True,True,True,-1.862569873595719e-17,1.2266347333466993e-18,0.0
+2q_mixed_channel,5,True,True,True,-5.913709648531628e-18,0.0,0.0
+2q_mixed_channel,6,True,True,True,-1.8135555779236528e-17,0.0,0.0
+2q_mixed_channel,7,True,True,True,-7.087026279008526e-18,1.962675466714922e-17,0.0

@@ -1,0 +1,411 @@
+circuit_name,channel_key,gate_name,physical_qubits,probe_state,measurement_basis,feature_index,calibration_round
+diag_1q_q0_f0,q0,id,[0],X+,X,0,0
+diag_1q_q0_f1,q0,id,[0],X+,Y,1,0
+diag_1q_q0_f2,q0,id,[0],X+,Z,2,0
+diag_1q_q0_f3,q0,id,[0],X-,X,3,0
+diag_1q_q0_f4,q0,id,[0],X-,Y,4,0
+diag_1q_q0_f5,q0,id,[0],X-,Z,5,0
+diag_1q_q0_f6,q0,id,[0],Y+,X,6,0
+diag_1q_q0_f7,q0,id,[0],Y+,Y,7,0
+diag_1q_q0_f8,q0,id,[0],Y+,Z,8,0
+diag_1q_q0_f9,q0,id,[0],Y-,X,9,0
+diag_1q_q0_f10,q0,id,[0],Y-,Y,10,0
+diag_1q_q0_f11,q0,id,[0],Y-,Z,11,0
+diag_1q_q0_f12,q0,id,[0],Z+,X,12,0
+diag_1q_q0_f13,q0,id,[0],Z+,Y,13,0
+diag_1q_q0_f14,q0,id,[0],Z+,Z,14,0
+diag_1q_q0_f15,q0,id,[0],Z-,X,15,0
+diag_1q_q0_f16,q0,id,[0],Z-,Y,16,0
+diag_1q_q0_f17,q0,id,[0],Z-,Z,17,0
+diag_1q_q1_f0,q1,id,[1],X+,X,0,0
+diag_1q_q1_f1,q1,id,[1],X+,Y,1,0
+diag_1q_q1_f2,q1,id,[1],X+,Z,2,0
+diag_1q_q1_f3,q1,id,[1],X-,X,3,0
+diag_1q_q1_f4,q1,id,[1],X-,Y,4,0
+diag_1q_q1_f5,q1,id,[1],X-,Z,5,0
+diag_1q_q1_f6,q1,id,[1],Y+,X,6,0
+diag_1q_q1_f7,q1,id,[1],Y+,Y,7,0
+diag_1q_q1_f8,q1,id,[1],Y+,Z,8,0
+diag_1q_q1_f9,q1,id,[1],Y-,X,9,0
+diag_1q_q1_f10,q1,id,[1],Y-,Y,10,0
+diag_1q_q1_f11,q1,id,[1],Y-,Z,11,0
+diag_1q_q1_f12,q1,id,[1],Z+,X,12,0
+diag_1q_q1_f13,q1,id,[1],Z+,Y,13,0
+diag_1q_q1_f14,q1,id,[1],Z+,Z,14,0
+diag_1q_q1_f15,q1,id,[1],Z-,X,15,0
+diag_1q_q1_f16,q1,id,[1],Z-,Y,16,0
+diag_1q_q1_f17,q1,id,[1],Z-,Z,17,0
+diag_1q_q2_f0,q2,id,[2],X+,X,0,0
+diag_1q_q2_f1,q2,id,[2],X+,Y,1,0
+diag_1q_q2_f2,q2,id,[2],X+,Z,2,0
+diag_1q_q2_f3,q2,id,[2],X-,X,3,0
+diag_1q_q2_f4,q2,id,[2],X-,Y,4,0
+diag_1q_q2_f5,q2,id,[2],X-,Z,5,0
+diag_1q_q2_f6,q2,id,[2],Y+,X,6,0
+diag_1q_q2_f7,q2,id,[2],Y+,Y,7,0
+diag_1q_q2_f8,q2,id,[2],Y+,Z,8,0
+diag_1q_q2_f9,q2,id,[2],Y-,X,9,0
+diag_1q_q2_f10,q2,id,[2],Y-,Y,10,0
+diag_1q_q2_f11,q2,id,[2],Y-,Z,11,0
+diag_1q_q2_f12,q2,id,[2],Z+,X,12,0
+diag_1q_q2_f13,q2,id,[2],Z+,Y,13,0
+diag_1q_q2_f14,q2,id,[2],Z+,Z,14,0
+diag_1q_q2_f15,q2,id,[2],Z-,X,15,0
+diag_1q_q2_f16,q2,id,[2],Z-,Y,16,0
+diag_1q_q2_f17,q2,id,[2],Z-,Z,17,0
+diag_1q_q3_f0,q3,id,[3],X+,X,0,0
+diag_1q_q3_f1,q3,id,[3],X+,Y,1,0
+diag_1q_q3_f2,q3,id,[3],X+,Z,2,0
+diag_1q_q3_f3,q3,id,[3],X-,X,3,0
+diag_1q_q3_f4,q3,id,[3],X-,Y,4,0
+diag_1q_q3_f5,q3,id,[3],X-,Z,5,0
+diag_1q_q3_f6,q3,id,[3],Y+,X,6,0
+diag_1q_q3_f7,q3,id,[3],Y+,Y,7,0
+diag_1q_q3_f8,q3,id,[3],Y+,Z,8,0
+diag_1q_q3_f9,q3,id,[3],Y-,X,9,0
+diag_1q_q3_f10,q3,id,[3],Y-,Y,10,0
+diag_1q_q3_f11,q3,id,[3],Y-,Z,11,0
+diag_1q_q3_f12,q3,id,[3],Z+,X,12,0
+diag_1q_q3_f13,q3,id,[3],Z+,Y,13,0
+diag_1q_q3_f14,q3,id,[3],Z+,Z,14,0
+diag_1q_q3_f15,q3,id,[3],Z-,X,15,0
+diag_1q_q3_f16,q3,id,[3],Z-,Y,16,0
+diag_1q_q3_f17,q3,id,[3],Z-,Z,17,0
+diag_1q_q4_f0,q4,id,[4],X+,X,0,0
+diag_1q_q4_f1,q4,id,[4],X+,Y,1,0
+diag_1q_q4_f2,q4,id,[4],X+,Z,2,0
+diag_1q_q4_f3,q4,id,[4],X-,X,3,0
+diag_1q_q4_f4,q4,id,[4],X-,Y,4,0
+diag_1q_q4_f5,q4,id,[4],X-,Z,5,0
+diag_1q_q4_f6,q4,id,[4],Y+,X,6,0
+diag_1q_q4_f7,q4,id,[4],Y+,Y,7,0
+diag_1q_q4_f8,q4,id,[4],Y+,Z,8,0
+diag_1q_q4_f9,q4,id,[4],Y-,X,9,0
+diag_1q_q4_f10,q4,id,[4],Y-,Y,10,0
+diag_1q_q4_f11,q4,id,[4],Y-,Z,11,0
+diag_1q_q4_f12,q4,id,[4],Z+,X,12,0
+diag_1q_q4_f13,q4,id,[4],Z+,Y,13,0
+diag_1q_q4_f14,q4,id,[4],Z+,Z,14,0
+diag_1q_q4_f15,q4,id,[4],Z-,X,15,0
+diag_1q_q4_f16,q4,id,[4],Z-,Y,16,0
+diag_1q_q4_f17,q4,id,[4],Z-,Z,17,0
+diag_2q_q0-q1_f0,q0-q1,cx,"[0, 1]","Z-,Y+",ZY,0,0
+diag_2q_q0-q1_f1,q0-q1,cx,"[0, 1]","X+,X+",XI,1,0
+diag_2q_q0-q1_f2,q0-q1,cx,"[0, 1]","Z-,Z+",ZZ,2,0
+diag_2q_q0-q1_f3,q0-q1,cx,"[0, 1]","X+,Z+",YY,3,0
+diag_2q_q0-q1_f4,q0-q1,cx,"[0, 1]","X+,Y+",YZ,4,0
+diag_2q_q0-q1_f5,q0-q1,cx,"[0, 1]","Z-,Y+",ZI,5,0
+diag_2q_q0-q1_f6,q0-q1,cx,"[0, 1]","X+,Z+",XY,6,0
+diag_2q_q0-q1_f7,q0-q1,cx,"[0, 1]","X+,Z-",XY,7,0
+diag_2q_q0-q1_f8,q0-q1,cx,"[0, 1]","Z+,Y+",IZ,8,0
+diag_2q_q0-q1_f9,q0-q1,cx,"[0, 1]","X+,X+",YZ,9,0
+diag_2q_q0-q1_f10,q0-q1,cx,"[0, 1]","X+,Y+",ZY,10,0
+diag_2q_q0-q1_f11,q0-q1,cx,"[0, 1]","Y+,Y+",ZY,11,0
+diag_2q_q0-q1_f12,q0-q1,cx,"[0, 1]","X+,Z+",XX,12,0
+diag_2q_q0-q1_f13,q0-q1,cx,"[0, 1]","Y+,Z+",YX,13,0
+diag_2q_q0-q1_f14,q0-q1,cx,"[0, 1]","X+,Y+",XX,14,0
+diag_2q_q0-q1_f15,q0-q1,cx,"[0, 1]","Y+,Y+",YX,15,0
+diag_2q_q0-q1_f16,q0-q1,cx,"[0, 1]","X+,X+",XX,16,0
+diag_2q_q0-q1_f17,q0-q1,cx,"[0, 1]","Y+,X+",YX,17,0
+diag_2q_q0-q1_f18,q0-q1,cx,"[0, 1]","X+,Z-",XX,18,0
+diag_2q_q0-q1_f19,q0-q1,cx,"[0, 1]","Y+,Z-",YX,19,0
+diag_2q_q0-q1_f20,q0-q1,cx,"[0, 1]","Y+,X+",YI,20,0
+diag_2q_q0-q1_f21,q0-q1,cx,"[0, 1]","Z+,Y+",IY,21,0
+diag_2q_q0-q1_f22,q0-q1,cx,"[0, 1]","Z+,Y+",ZY,22,0
+diag_2q_q0-q1_f23,q0-q1,cx,"[0, 1]","Z-,Y+",IY,23,0
+diag_2q_q0-q1_f24,q0-q1,cx,"[0, 1]","Z-,X+",ZX,24,0
+diag_2q_q0-q1_f25,q0-q1,cx,"[0, 1]","Y+,Y+",XZ,25,0
+diag_2q_q0-q1_f26,q0-q1,cx,"[0, 1]","Y+,Z+",XY,26,0
+diag_2q_q0-q1_f27,q0-q1,cx,"[0, 1]","X+,Z-",YY,27,0
+diag_2q_q0-q1_f28,q0-q1,cx,"[0, 1]","Y+,Z-",XY,28,0
+diag_2q_q0-q1_f29,q0-q1,cx,"[0, 1]","Z-,Z-",ZZ,29,0
+diag_2q_q0-q1_f30,q0-q1,cx,"[0, 1]","Z-,Z+",IZ,30,0
+diag_2q_q0-q1_f31,q0-q1,cx,"[0, 1]","Z+,Z-",IZ,31,0
+diag_2q_q0-q1_f32,q0-q1,cx,"[0, 1]","Z+,Z-",ZZ,32,0
+diag_2q_q0-q1_f33,q0-q1,cx,"[0, 1]","Z+,X+",IX,33,0
+diag_2q_q0-q1_f34,q0-q1,cx,"[0, 1]","Z+,X+",ZX,34,0
+diag_2q_q0-q1_f35,q0-q1,cx,"[0, 1]","X+,X+",IX,35,0
+diag_2q_q0-q1_f36,q0-q1,cx,"[0, 1]","Y+,X+",IX,36,0
+diag_2q_q0-q1_f37,q0-q1,cx,"[0, 1]","Z-,X+",IX,37,0
+diag_2q_q0-q1_f38,q0-q1,cx,"[0, 1]","X+,Z-",ZZ,38,0
+diag_2q_q0-q1_f39,q0-q1,cx,"[0, 1]","Y+,Z-",ZZ,39,0
+diag_2q_q0-q1_f40,q0-q1,cx,"[0, 1]","X+,Z+",ZZ,40,0
+diag_2q_q0-q1_f41,q0-q1,cx,"[0, 1]","Y+,Z+",ZZ,41,0
+diag_2q_q0-q1_f42,q0-q1,cx,"[0, 1]","Z-,Z-",IZ,42,0
+diag_2q_q0-q1_f43,q0-q1,cx,"[0, 1]","Z+,Z+",IZ,43,0
+diag_2q_q0-q1_f44,q0-q1,cx,"[0, 1]","Z+,Z+",ZZ,44,0
+diag_2q_q0-q1_f45,q0-q1,cx,"[0, 1]","Z-,Z-",ZI,45,0
+diag_2q_q0-q1_f46,q0-q1,cx,"[0, 1]","Z-,X+",ZI,46,0
+diag_2q_q0-q1_f47,q0-q1,cx,"[0, 1]","Z-,Z+",ZI,47,0
+diag_2q_q0-q1_f48,q0-q1,cx,"[0, 1]","Z+,Y+",ZZ,48,0
+diag_2q_q0-q1_f49,q0-q1,cx,"[0, 1]","X+,Y+",IZ,49,0
+diag_2q_q0-q1_f50,q0-q1,cx,"[0, 1]","Y+,Y+",IZ,50,0
+diag_2q_q0-q1_f51,q0-q1,cx,"[0, 1]","Y+,Z-",YY,51,0
+diag_2q_q0-q1_f52,q0-q1,cx,"[0, 1]","X+,Z-",YX,52,0
+diag_2q_q0-q1_f53,q0-q1,cx,"[0, 1]","Y+,Z-",XX,53,0
+diag_2q_q0-q1_f54,q0-q1,cx,"[0, 1]","X+,X+",YX,54,0
+diag_2q_q0-q1_f55,q0-q1,cx,"[0, 1]","Y+,X+",XX,55,0
+diag_2q_q0-q1_f56,q0-q1,cx,"[0, 1]","Z-,Y+",IZ,56,0
+diag_2q_q0-q1_f57,q0-q1,cx,"[0, 1]","Y+,Z+",YY,57,0
+diag_2q_q0-q1_f58,q0-q1,cx,"[0, 1]","X+,X+",YI,58,0
+diag_2q_q0-q1_f59,q0-q1,cx,"[0, 1]","Y+,X+",XI,59,0
+diag_2q_q0-q1_f60,q0-q1,cx,"[0, 1]","Z-,Y+",ZZ,60,0
+diag_2q_q0-q1_f61,q0-q1,cx,"[0, 1]","Z+,X+",IY,61,0
+diag_2q_q0-q1_f62,q0-q1,cx,"[0, 1]","Z+,X+",ZY,62,0
+diag_2q_q0-q1_f63,q0-q1,cx,"[0, 1]","Z+,Y+",IX,63,0
+diag_2q_q0-q1_f64,q0-q1,cx,"[0, 1]","Z+,Y+",ZX,64,0
+diag_2q_q0-q1_f65,q0-q1,cx,"[0, 1]","X+,Z+",YX,65,0
+diag_2q_q0-q1_f66,q0-q1,cx,"[0, 1]","Y+,Z+",XX,66,0
+diag_2q_q0-q1_f67,q0-q1,cx,"[0, 1]","Z-,X+",ZY,67,0
+diag_2q_q0-q1_f68,q0-q1,cx,"[0, 1]","Z-,X+",IY,68,0
+diag_2q_q0-q1_f69,q0-q1,cx,"[0, 1]","Z-,Y+",ZX,69,0
+diag_2q_q0-q1_f70,q0-q1,cx,"[0, 1]","Z-,Y+",IX,70,0
+diag_2q_q0-q1_f71,q0-q1,cx,"[0, 1]","X+,X+",ZI,71,0
+diag_2q_q0-q1_f72,q0-q1,cx,"[0, 1]","Y+,X+",ZI,72,0
+diag_2q_q0-q1_f73,q0-q1,cx,"[0, 1]","X+,Z-",ZI,73,0
+diag_2q_q0-q1_f74,q0-q1,cx,"[0, 1]","X+,Y+",ZI,74,0
+diag_2q_q0-q1_f75,q0-q1,cx,"[0, 1]","Y+,Z-",ZI,75,0
+diag_2q_q0-q1_f76,q0-q1,cx,"[0, 1]","Y+,Y+",ZI,76,0
+diag_2q_q0-q1_f77,q0-q1,cx,"[0, 1]","X+,Z+",ZI,77,0
+diag_2q_q0-q1_f78,q0-q1,cx,"[0, 1]","Y+,Z+",ZI,78,0
+diag_2q_q0-q1_f79,q0-q1,cx,"[0, 1]","Z+,X+",IZ,79,0
+diag_2q_q1-q2_f0,q1-q2,cx,"[1, 2]","Z-,Y+",ZY,0,0
+diag_2q_q1-q2_f1,q1-q2,cx,"[1, 2]","X+,X+",XI,1,0
+diag_2q_q1-q2_f2,q1-q2,cx,"[1, 2]","Z-,Z+",ZZ,2,0
+diag_2q_q1-q2_f3,q1-q2,cx,"[1, 2]","X+,Z+",YY,3,0
+diag_2q_q1-q2_f4,q1-q2,cx,"[1, 2]","X+,Y+",YZ,4,0
+diag_2q_q1-q2_f5,q1-q2,cx,"[1, 2]","Z-,Y+",ZI,5,0
+diag_2q_q1-q2_f6,q1-q2,cx,"[1, 2]","X+,Z+",XY,6,0
+diag_2q_q1-q2_f7,q1-q2,cx,"[1, 2]","X+,Z-",XY,7,0
+diag_2q_q1-q2_f8,q1-q2,cx,"[1, 2]","Z+,Y+",IZ,8,0
+diag_2q_q1-q2_f9,q1-q2,cx,"[1, 2]","X+,X+",YZ,9,0
+diag_2q_q1-q2_f10,q1-q2,cx,"[1, 2]","X+,Y+",ZY,10,0
+diag_2q_q1-q2_f11,q1-q2,cx,"[1, 2]","Y+,Y+",ZY,11,0
+diag_2q_q1-q2_f12,q1-q2,cx,"[1, 2]","X+,Z+",XX,12,0
+diag_2q_q1-q2_f13,q1-q2,cx,"[1, 2]","Y+,Z+",YX,13,0
+diag_2q_q1-q2_f14,q1-q2,cx,"[1, 2]","X+,Y+",XX,14,0
+diag_2q_q1-q2_f15,q1-q2,cx,"[1, 2]","Y+,Y+",YX,15,0
+diag_2q_q1-q2_f16,q1-q2,cx,"[1, 2]","X+,X+",XX,16,0
+diag_2q_q1-q2_f17,q1-q2,cx,"[1, 2]","Y+,X+",YX,17,0
+diag_2q_q1-q2_f18,q1-q2,cx,"[1, 2]","X+,Z-",XX,18,0
+diag_2q_q1-q2_f19,q1-q2,cx,"[1, 2]","Y+,Z-",YX,19,0
+diag_2q_q1-q2_f20,q1-q2,cx,"[1, 2]","Y+,X+",YI,20,0
+diag_2q_q1-q2_f21,q1-q2,cx,"[1, 2]","Z+,Y+",IY,21,0
+diag_2q_q1-q2_f22,q1-q2,cx,"[1, 2]","Z+,Y+",ZY,22,0
+diag_2q_q1-q2_f23,q1-q2,cx,"[1, 2]","Z-,Y+",IY,23,0
+diag_2q_q1-q2_f24,q1-q2,cx,"[1, 2]","Z-,X+",ZX,24,0
+diag_2q_q1-q2_f25,q1-q2,cx,"[1, 2]","Y+,Y+",XZ,25,0
+diag_2q_q1-q2_f26,q1-q2,cx,"[1, 2]","Y+,Z+",XY,26,0
+diag_2q_q1-q2_f27,q1-q2,cx,"[1, 2]","X+,Z-",YY,27,0
+diag_2q_q1-q2_f28,q1-q2,cx,"[1, 2]","Y+,Z-",XY,28,0
+diag_2q_q1-q2_f29,q1-q2,cx,"[1, 2]","Z-,Z-",ZZ,29,0
+diag_2q_q1-q2_f30,q1-q2,cx,"[1, 2]","Z-,Z+",IZ,30,0
+diag_2q_q1-q2_f31,q1-q2,cx,"[1, 2]","Z+,Z-",IZ,31,0
+diag_2q_q1-q2_f32,q1-q2,cx,"[1, 2]","Z+,Z-",ZZ,32,0
+diag_2q_q1-q2_f33,q1-q2,cx,"[1, 2]","Z+,X+",IX,33,0
+diag_2q_q1-q2_f34,q1-q2,cx,"[1, 2]","Z+,X+",ZX,34,0
+diag_2q_q1-q2_f35,q1-q2,cx,"[1, 2]","X+,X+",IX,35,0
+diag_2q_q1-q2_f36,q1-q2,cx,"[1, 2]","Y+,X+",IX,36,0
+diag_2q_q1-q2_f37,q1-q2,cx,"[1, 2]","Z-,X+",IX,37,0
+diag_2q_q1-q2_f38,q1-q2,cx,"[1, 2]","X+,Z-",ZZ,38,0
+diag_2q_q1-q2_f39,q1-q2,cx,"[1, 2]","Y+,Z-",ZZ,39,0
+diag_2q_q1-q2_f40,q1-q2,cx,"[1, 2]","X+,Z+",ZZ,40,0
+diag_2q_q1-q2_f41,q1-q2,cx,"[1, 2]","Y+,Z+",ZZ,41,0
+diag_2q_q1-q2_f42,q1-q2,cx,"[1, 2]","Z-,Z-",IZ,42,0
+diag_2q_q1-q2_f43,q1-q2,cx,"[1, 2]","Z+,Z+",IZ,43,0
+diag_2q_q1-q2_f44,q1-q2,cx,"[1, 2]","Z+,Z+",ZZ,44,0
+diag_2q_q1-q2_f45,q1-q2,cx,"[1, 2]","Z-,Z-",ZI,45,0
+diag_2q_q1-q2_f46,q1-q2,cx,"[1, 2]","Z-,X+",ZI,46,0
+diag_2q_q1-q2_f47,q1-q2,cx,"[1, 2]","Z-,Z+",ZI,47,0
+diag_2q_q1-q2_f48,q1-q2,cx,"[1, 2]","Z+,Y+",ZZ,48,0
+diag_2q_q1-q2_f49,q1-q2,cx,"[1, 2]","X+,Y+",IZ,49,0
+diag_2q_q1-q2_f50,q1-q2,cx,"[1, 2]","Y+,Y+",IZ,50,0
+diag_2q_q1-q2_f51,q1-q2,cx,"[1, 2]","Y+,Z-",YY,51,0
+diag_2q_q1-q2_f52,q1-q2,cx,"[1, 2]","X+,Z-",YX,52,0
+diag_2q_q1-q2_f53,q1-q2,cx,"[1, 2]","Y+,Z-",XX,53,0
+diag_2q_q1-q2_f54,q1-q2,cx,"[1, 2]","X+,X+",YX,54,0
+diag_2q_q1-q2_f55,q1-q2,cx,"[1, 2]","Y+,X+",XX,55,0
+diag_2q_q1-q2_f56,q1-q2,cx,"[1, 2]","Z-,Y+",IZ,56,0
+diag_2q_q1-q2_f57,q1-q2,cx,"[1, 2]","Y+,Z+",YY,57,0
+diag_2q_q1-q2_f58,q1-q2,cx,"[1, 2]","X+,X+",YI,58,0
+diag_2q_q1-q2_f59,q1-q2,cx,"[1, 2]","Y+,X+",XI,59,0
+diag_2q_q1-q2_f60,q1-q2,cx,"[1, 2]","Z-,Y+",ZZ,60,0
+diag_2q_q1-q2_f61,q1-q2,cx,"[1, 2]","Z+,X+",IY,61,0
+diag_2q_q1-q2_f62,q1-q2,cx,"[1, 2]","Z+,X+",ZY,62,0
+diag_2q_q1-q2_f63,q1-q2,cx,"[1, 2]","Z+,Y+",IX,63,0
+diag_2q_q1-q2_f64,q1-q2,cx,"[1, 2]","Z+,Y+",ZX,64,0
+diag_2q_q1-q2_f65,q1-q2,cx,"[1, 2]","X+,Z+",YX,65,0
+diag_2q_q1-q2_f66,q1-q2,cx,"[1, 2]","Y+,Z+",XX,66,0
+diag_2q_q1-q2_f67,q1-q2,cx,"[1, 2]","Z-,X+",ZY,67,0
+diag_2q_q1-q2_f68,q1-q2,cx,"[1, 2]","Z-,X+",IY,68,0
+diag_2q_q1-q2_f69,q1-q2,cx,"[1, 2]","Z-,Y+",ZX,69,0
+diag_2q_q1-q2_f70,q1-q2,cx,"[1, 2]","Z-,Y+",IX,70,0
+diag_2q_q1-q2_f71,q1-q2,cx,"[1, 2]","X+,X+",ZI,71,0
+diag_2q_q1-q2_f72,q1-q2,cx,"[1, 2]","Y+,X+",ZI,72,0
+diag_2q_q1-q2_f73,q1-q2,cx,"[1, 2]","X+,Z-",ZI,73,0
+diag_2q_q1-q2_f74,q1-q2,cx,"[1, 2]","X+,Y+",ZI,74,0
+diag_2q_q1-q2_f75,q1-q2,cx,"[1, 2]","Y+,Z-",ZI,75,0
+diag_2q_q1-q2_f76,q1-q2,cx,"[1, 2]","Y+,Y+",ZI,76,0
+diag_2q_q1-q2_f77,q1-q2,cx,"[1, 2]","X+,Z+",ZI,77,0
+diag_2q_q1-q2_f78,q1-q2,cx,"[1, 2]","Y+,Z+",ZI,78,0
+diag_2q_q1-q2_f79,q1-q2,cx,"[1, 2]","Z+,X+",IZ,79,0
+diag_2q_q2-q3_f0,q2-q3,cx,"[2, 3]","Z-,Y+",ZY,0,0
+diag_2q_q2-q3_f1,q2-q3,cx,"[2, 3]","X+,X+",XI,1,0
+diag_2q_q2-q3_f2,q2-q3,cx,"[2, 3]","Z-,Z+",ZZ,2,0
+diag_2q_q2-q3_f3,q2-q3,cx,"[2, 3]","X+,Z+",YY,3,0
+diag_2q_q2-q3_f4,q2-q3,cx,"[2, 3]","X+,Y+",YZ,4,0
+diag_2q_q2-q3_f5,q2-q3,cx,"[2, 3]","Z-,Y+",ZI,5,0
+diag_2q_q2-q3_f6,q2-q3,cx,"[2, 3]","X+,Z+",XY,6,0
+diag_2q_q2-q3_f7,q2-q3,cx,"[2, 3]","X+,Z-",XY,7,0
+diag_2q_q2-q3_f8,q2-q3,cx,"[2, 3]","Z+,Y+",IZ,8,0
+diag_2q_q2-q3_f9,q2-q3,cx,"[2, 3]","X+,X+",YZ,9,0
+diag_2q_q2-q3_f10,q2-q3,cx,"[2, 3]","X+,Y+",ZY,10,0
+diag_2q_q2-q3_f11,q2-q3,cx,"[2, 3]","Y+,Y+",ZY,11,0
+diag_2q_q2-q3_f12,q2-q3,cx,"[2, 3]","X+,Z+",XX,12,0
+diag_2q_q2-q3_f13,q2-q3,cx,"[2, 3]","Y+,Z+",YX,13,0
+diag_2q_q2-q3_f14,q2-q3,cx,"[2, 3]","X+,Y+",XX,14,0
+diag_2q_q2-q3_f15,q2-q3,cx,"[2, 3]","Y+,Y+",YX,15,0
+diag_2q_q2-q3_f16,q2-q3,cx,"[2, 3]","X+,X+",XX,16,0
+diag_2q_q2-q3_f17,q2-q3,cx,"[2, 3]","Y+,X+",YX,17,0
+diag_2q_q2-q3_f18,q2-q3,cx,"[2, 3]","X+,Z-",XX,18,0
+diag_2q_q2-q3_f19,q2-q3,cx,"[2, 3]","Y+,Z-",YX,19,0
+diag_2q_q2-q3_f20,q2-q3,cx,"[2, 3]","Y+,X+",YI,20,0
+diag_2q_q2-q3_f21,q2-q3,cx,"[2, 3]","Z+,Y+",IY,21,0
+diag_2q_q2-q3_f22,q2-q3,cx,"[2, 3]","Z+,Y+",ZY,22,0
+diag_2q_q2-q3_f23,q2-q3,cx,"[2, 3]","Z-,Y+",IY,23,0
+diag_2q_q2-q3_f24,q2-q3,cx,"[2, 3]","Z-,X+",ZX,24,0
+diag_2q_q2-q3_f25,q2-q3,cx,"[2, 3]","Y+,Y+",XZ,25,0
+diag_2q_q2-q3_f26,q2-q3,cx,"[2, 3]","Y+,Z+",XY,26,0
+diag_2q_q2-q3_f27,q2-q3,cx,"[2, 3]","X+,Z-",YY,27,0
+diag_2q_q2-q3_f28,q2-q3,cx,"[2, 3]","Y+,Z-",XY,28,0
+diag_2q_q2-q3_f29,q2-q3,cx,"[2, 3]","Z-,Z-",ZZ,29,0
+diag_2q_q2-q3_f30,q2-q3,cx,"[2, 3]","Z-,Z+",IZ,30,0
+diag_2q_q2-q3_f31,q2-q3,cx,"[2, 3]","Z+,Z-",IZ,31,0
+diag_2q_q2-q3_f32,q2-q3,cx,"[2, 3]","Z+,Z-",ZZ,32,0
+diag_2q_q2-q3_f33,q2-q3,cx,"[2, 3]","Z+,X+",IX,33,0
+diag_2q_q2-q3_f34,q2-q3,cx,"[2, 3]","Z+,X+",ZX,34,0
+diag_2q_q2-q3_f35,q2-q3,cx,"[2, 3]","X+,X+",IX,35,0
+diag_2q_q2-q3_f36,q2-q3,cx,"[2, 3]","Y+,X+",IX,36,0
+diag_2q_q2-q3_f37,q2-q3,cx,"[2, 3]","Z-,X+",IX,37,0
+diag_2q_q2-q3_f38,q2-q3,cx,"[2, 3]","X+,Z-",ZZ,38,0
+diag_2q_q2-q3_f39,q2-q3,cx,"[2, 3]","Y+,Z-",ZZ,39,0
+diag_2q_q2-q3_f40,q2-q3,cx,"[2, 3]","X+,Z+",ZZ,40,0
+diag_2q_q2-q3_f41,q2-q3,cx,"[2, 3]","Y+,Z+",ZZ,41,0
+diag_2q_q2-q3_f42,q2-q3,cx,"[2, 3]","Z-,Z-",IZ,42,0
+diag_2q_q2-q3_f43,q2-q3,cx,"[2, 3]","Z+,Z+",IZ,43,0
+diag_2q_q2-q3_f44,q2-q3,cx,"[2, 3]","Z+,Z+",ZZ,44,0
+diag_2q_q2-q3_f45,q2-q3,cx,"[2, 3]","Z-,Z-",ZI,45,0
+diag_2q_q2-q3_f46,q2-q3,cx,"[2, 3]","Z-,X+",ZI,46,0
+diag_2q_q2-q3_f47,q2-q3,cx,"[2, 3]","Z-,Z+",ZI,47,0
+diag_2q_q2-q3_f48,q2-q3,cx,"[2, 3]","Z+,Y+",ZZ,48,0
+diag_2q_q2-q3_f49,q2-q3,cx,"[2, 3]","X+,Y+",IZ,49,0
+diag_2q_q2-q3_f50,q2-q3,cx,"[2, 3]","Y+,Y+",IZ,50,0
+diag_2q_q2-q3_f51,q2-q3,cx,"[2, 3]","Y+,Z-",YY,51,0
+diag_2q_q2-q3_f52,q2-q3,cx,"[2, 3]","X+,Z-",YX,52,0
+diag_2q_q2-q3_f53,q2-q3,cx,"[2, 3]","Y+,Z-",XX,53,0
+diag_2q_q2-q3_f54,q2-q3,cx,"[2, 3]","X+,X+",YX,54,0
+diag_2q_q2-q3_f55,q2-q3,cx,"[2, 3]","Y+,X+",XX,55,0
+diag_2q_q2-q3_f56,q2-q3,cx,"[2, 3]","Z-,Y+",IZ,56,0
+diag_2q_q2-q3_f57,q2-q3,cx,"[2, 3]","Y+,Z+",YY,57,0
+diag_2q_q2-q3_f58,q2-q3,cx,"[2, 3]","X+,X+",YI,58,0
+diag_2q_q2-q3_f59,q2-q3,cx,"[2, 3]","Y+,X+",XI,59,0
+diag_2q_q2-q3_f60,q2-q3,cx,"[2, 3]","Z-,Y+",ZZ,60,0
+diag_2q_q2-q3_f61,q2-q3,cx,"[2, 3]","Z+,X+",IY,61,0
+diag_2q_q2-q3_f62,q2-q3,cx,"[2, 3]","Z+,X+",ZY,62,0
+diag_2q_q2-q3_f63,q2-q3,cx,"[2, 3]","Z+,Y+",IX,63,0
+diag_2q_q2-q3_f64,q2-q3,cx,"[2, 3]","Z+,Y+",ZX,64,0
+diag_2q_q2-q3_f65,q2-q3,cx,"[2, 3]","X+,Z+",YX,65,0
+diag_2q_q2-q3_f66,q2-q3,cx,"[2, 3]","Y+,Z+",XX,66,0
+diag_2q_q2-q3_f67,q2-q3,cx,"[2, 3]","Z-,X+",ZY,67,0
+diag_2q_q2-q3_f68,q2-q3,cx,"[2, 3]","Z-,X+",IY,68,0
+diag_2q_q2-q3_f69,q2-q3,cx,"[2, 3]","Z-,Y+",ZX,69,0
+diag_2q_q2-q3_f70,q2-q3,cx,"[2, 3]","Z-,Y+",IX,70,0
+diag_2q_q2-q3_f71,q2-q3,cx,"[2, 3]","X+,X+",ZI,71,0
+diag_2q_q2-q3_f72,q2-q3,cx,"[2, 3]","Y+,X+",ZI,72,0
+diag_2q_q2-q3_f73,q2-q3,cx,"[2, 3]","X+,Z-",ZI,73,0
+diag_2q_q2-q3_f74,q2-q3,cx,"[2, 3]","X+,Y+",ZI,74,0
+diag_2q_q2-q3_f75,q2-q3,cx,"[2, 3]","Y+,Z-",ZI,75,0
+diag_2q_q2-q3_f76,q2-q3,cx,"[2, 3]","Y+,Y+",ZI,76,0
+diag_2q_q2-q3_f77,q2-q3,cx,"[2, 3]","X+,Z+",ZI,77,0
+diag_2q_q2-q3_f78,q2-q3,cx,"[2, 3]","Y+,Z+",ZI,78,0
+diag_2q_q2-q3_f79,q2-q3,cx,"[2, 3]","Z+,X+",IZ,79,0
+diag_2q_q3-q4_f0,q3-q4,cx,"[3, 4]","Z-,Y+",ZY,0,0
+diag_2q_q3-q4_f1,q3-q4,cx,"[3, 4]","X+,X+",XI,1,0
+diag_2q_q3-q4_f2,q3-q4,cx,"[3, 4]","Z-,Z+",ZZ,2,0
+diag_2q_q3-q4_f3,q3-q4,cx,"[3, 4]","X+,Z+",YY,3,0
+diag_2q_q3-q4_f4,q3-q4,cx,"[3, 4]","X+,Y+",YZ,4,0
+diag_2q_q3-q4_f5,q3-q4,cx,"[3, 4]","Z-,Y+",ZI,5,0
+diag_2q_q3-q4_f6,q3-q4,cx,"[3, 4]","X+,Z+",XY,6,0
+diag_2q_q3-q4_f7,q3-q4,cx,"[3, 4]","X+,Z-",XY,7,0
+diag_2q_q3-q4_f8,q3-q4,cx,"[3, 4]","Z+,Y+",IZ,8,0
+diag_2q_q3-q4_f9,q3-q4,cx,"[3, 4]","X+,X+",YZ,9,0
+diag_2q_q3-q4_f10,q3-q4,cx,"[3, 4]","X+,Y+",ZY,10,0
+diag_2q_q3-q4_f11,q3-q4,cx,"[3, 4]","Y+,Y+",ZY,11,0
+diag_2q_q3-q4_f12,q3-q4,cx,"[3, 4]","X+,Z+",XX,12,0
+diag_2q_q3-q4_f13,q3-q4,cx,"[3, 4]","Y+,Z+",YX,13,0
+diag_2q_q3-q4_f14,q3-q4,cx,"[3, 4]","X+,Y+",XX,14,0
+diag_2q_q3-q4_f15,q3-q4,cx,"[3, 4]","Y+,Y+",YX,15,0
+diag_2q_q3-q4_f16,q3-q4,cx,"[3, 4]","X+,X+",XX,16,0
+diag_2q_q3-q4_f17,q3-q4,cx,"[3, 4]","Y+,X+",YX,17,0
+diag_2q_q3-q4_f18,q3-q4,cx,"[3, 4]","X+,Z-",XX,18,0
+diag_2q_q3-q4_f19,q3-q4,cx,"[3, 4]","Y+,Z-",YX,19,0
+diag_2q_q3-q4_f20,q3-q4,cx,"[3, 4]","Y+,X+",YI,20,0
+diag_2q_q3-q4_f21,q3-q4,cx,"[3, 4]","Z+,Y+",IY,21,0
+diag_2q_q3-q4_f22,q3-q4,cx,"[3, 4]","Z+,Y+",ZY,22,0
+diag_2q_q3-q4_f23,q3-q4,cx,"[3, 4]","Z-,Y+",IY,23,0
+diag_2q_q3-q4_f24,q3-q4,cx,"[3, 4]","Z-,X+",ZX,24,0
+diag_2q_q3-q4_f25,q3-q4,cx,"[3, 4]","Y+,Y+",XZ,25,0
+diag_2q_q3-q4_f26,q3-q4,cx,"[3, 4]","Y+,Z+",XY,26,0
+diag_2q_q3-q4_f27,q3-q4,cx,"[3, 4]","X+,Z-",YY,27,0
+diag_2q_q3-q4_f28,q3-q4,cx,"[3, 4]","Y+,Z-",XY,28,0
+diag_2q_q3-q4_f29,q3-q4,cx,"[3, 4]","Z-,Z-",ZZ,29,0
+diag_2q_q3-q4_f30,q3-q4,cx,"[3, 4]","Z-,Z+",IZ,30,0
+diag_2q_q3-q4_f31,q3-q4,cx,"[3, 4]","Z+,Z-",IZ,31,0
+diag_2q_q3-q4_f32,q3-q4,cx,"[3, 4]","Z+,Z-",ZZ,32,0
+diag_2q_q3-q4_f33,q3-q4,cx,"[3, 4]","Z+,X+",IX,33,0
+diag_2q_q3-q4_f34,q3-q4,cx,"[3, 4]","Z+,X+",ZX,34,0
+diag_2q_q3-q4_f35,q3-q4,cx,"[3, 4]","X+,X+",IX,35,0
+diag_2q_q3-q4_f36,q3-q4,cx,"[3, 4]","Y+,X+",IX,36,0
+diag_2q_q3-q4_f37,q3-q4,cx,"[3, 4]","Z-,X+",IX,37,0
+diag_2q_q3-q4_f38,q3-q4,cx,"[3, 4]","X+,Z-",ZZ,38,0
+diag_2q_q3-q4_f39,q3-q4,cx,"[3, 4]","Y+,Z-",ZZ,39,0
+diag_2q_q3-q4_f40,q3-q4,cx,"[3, 4]","X+,Z+",ZZ,40,0
+diag_2q_q3-q4_f41,q3-q4,cx,"[3, 4]","Y+,Z+",ZZ,41,0
+diag_2q_q3-q4_f42,q3-q4,cx,"[3, 4]","Z-,Z-",IZ,42,0
+diag_2q_q3-q4_f43,q3-q4,cx,"[3, 4]","Z+,Z+",IZ,43,0
+diag_2q_q3-q4_f44,q3-q4,cx,"[3, 4]","Z+,Z+",ZZ,44,0
+diag_2q_q3-q4_f45,q3-q4,cx,"[3, 4]","Z-,Z-",ZI,45,0
+diag_2q_q3-q4_f46,q3-q4,cx,"[3, 4]","Z-,X+",ZI,46,0
+diag_2q_q3-q4_f47,q3-q4,cx,"[3, 4]","Z-,Z+",ZI,47,0
+diag_2q_q3-q4_f48,q3-q4,cx,"[3, 4]","Z+,Y+",ZZ,48,0
+diag_2q_q3-q4_f49,q3-q4,cx,"[3, 4]","X+,Y+",IZ,49,0
+diag_2q_q3-q4_f50,q3-q4,cx,"[3, 4]","Y+,Y+",IZ,50,0
+diag_2q_q3-q4_f51,q3-q4,cx,"[3, 4]","Y+,Z-",YY,51,0
+diag_2q_q3-q4_f52,q3-q4,cx,"[3, 4]","X+,Z-",YX,52,0
+diag_2q_q3-q4_f53,q3-q4,cx,"[3, 4]","Y+,Z-",XX,53,0
+diag_2q_q3-q4_f54,q3-q4,cx,"[3, 4]","X+,X+",YX,54,0
+diag_2q_q3-q4_f55,q3-q4,cx,"[3, 4]","Y+,X+",XX,55,0
+diag_2q_q3-q4_f56,q3-q4,cx,"[3, 4]","Z-,Y+",IZ,56,0
+diag_2q_q3-q4_f57,q3-q4,cx,"[3, 4]","Y+,Z+",YY,57,0
+diag_2q_q3-q4_f58,q3-q4,cx,"[3, 4]","X+,X+",YI,58,0
+diag_2q_q3-q4_f59,q3-q4,cx,"[3, 4]","Y+,X+",XI,59,0
+diag_2q_q3-q4_f60,q3-q4,cx,"[3, 4]","Z-,Y+",ZZ,60,0
+diag_2q_q3-q4_f61,q3-q4,cx,"[3, 4]","Z+,X+",IY,61,0
+diag_2q_q3-q4_f62,q3-q4,cx,"[3, 4]","Z+,X+",ZY,62,0
+diag_2q_q3-q4_f63,q3-q4,cx,"[3, 4]","Z+,Y+",IX,63,0
+diag_2q_q3-q4_f64,q3-q4,cx,"[3, 4]","Z+,Y+",ZX,64,0
+diag_2q_q3-q4_f65,q3-q4,cx,"[3, 4]","X+,Z+",YX,65,0
+diag_2q_q3-q4_f66,q3-q4,cx,"[3, 4]","Y+,Z+",XX,66,0
+diag_2q_q3-q4_f67,q3-q4,cx,"[3, 4]","Z-,X+",ZY,67,0
+diag_2q_q3-q4_f68,q3-q4,cx,"[3, 4]","Z-,X+",IY,68,0
+diag_2q_q3-q4_f69,q3-q4,cx,"[3, 4]","Z-,Y+",ZX,69,0
+diag_2q_q3-q4_f70,q3-q4,cx,"[3, 4]","Z-,Y+",IX,70,0
+diag_2q_q3-q4_f71,q3-q4,cx,"[3, 4]","X+,X+",ZI,71,0
+diag_2q_q3-q4_f72,q3-q4,cx,"[3, 4]","Y+,X+",ZI,72,0
+diag_2q_q3-q4_f73,q3-q4,cx,"[3, 4]","X+,Z-",ZI,73,0
+diag_2q_q3-q4_f74,q3-q4,cx,"[3, 4]","X+,Y+",ZI,74,0
+diag_2q_q3-q4_f75,q3-q4,cx,"[3, 4]","Y+,Z-",ZI,75,0
+diag_2q_q3-q4_f76,q3-q4,cx,"[3, 4]","Y+,Y+",ZI,76,0
+diag_2q_q3-q4_f77,q3-q4,cx,"[3, 4]","X+,Z+",ZI,77,0
+diag_2q_q3-q4_f78,q3-q4,cx,"[3, 4]","Y+,Z+",ZI,78,0
+diag_2q_q3-q4_f79,q3-q4,cx,"[3, 4]","Z+,X+",IZ,79,0

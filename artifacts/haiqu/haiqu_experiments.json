@@ -1,0 +1,156 @@
+{
+  "algorithm_correction": {
+    "added_physical_correction_gates": 0,
+    "algorithm": "two_qubit_grover_search",
+    "amplitude_damping_kappa": "non-unital component included in the same response inverse",
+    "coherent_alpha": "propagated through every modeled 1Q/CX error location and included in the full algorithm-response inverse",
+    "depth_sweep_method": "cx_cx_identity_folding",
+    "instances": 16,
+    "semantics": "error cancellation and mitigation, not fault-tolerant quantum error correction",
+    "stochastic_gamma": "regularized inverse of the atlas-predicted algorithm response matrix",
+    "targets_per_edge": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "two_qubit_depths": [
+      2
+    ],
+    "uses_benchmark_counts_to_fit_inverse": false
+  },
+  "api_features": {
+    "circuit_logging": true,
+    "cloud_transpilation": true,
+    "custom_model_inference_layer": false,
+    "experiment_tracking": true,
+    "hybrid_flow": true,
+    "login": true,
+    "mitigation_flags": [
+      "dynamical_decoupling",
+      "readout_mitigation",
+      "noise_tailoring",
+      "advanced_mitigation"
+    ],
+    "run": true,
+    "vector_loading": true
+  },
+  "cloud_enabled": false,
+  "cloud_unavailable_reason": "HAIQU_API_KEY is not set",
+  "correction_improvement_tvd": 0.017625432888395992,
+  "device": {
+    "calibration_timestamp": "2026-07-25T07:48:41.107422+00:00",
+    "id": "fake_fez",
+    "metadata": {
+      "backend_class": "FakeFez",
+      "noise_model_source": "qiskit_aer.NoiseModel.from_backend",
+      "simulator": true
+    },
+    "qubits": 156,
+    "source": "local_qiskit_fake_backend"
+  },
+  "execution_audit": "artifacts/haiqu/execution_audit.json",
+  "experiments": {},
+  "haiqu_sdk_version": "1.4.0",
+  "hybrid_flow": {
+    "custom_model_inference_layer_supported": false,
+    "integration": "classical_ridge_only",
+    "program_schema": {
+      "layers": [
+        {
+          "type": "input"
+        },
+        {
+          "optimization_level": 2,
+          "type": "transpilation"
+        },
+        {
+          "advanced_mitigation": true,
+          "dynamical_decoupling": true,
+          "mitigation_enabled": true,
+          "noise_tailoring": true,
+          "readout_mitigation": true,
+          "readout_mitigation_options": {},
+          "type": "distribution_mitigation"
+        },
+        {
+          "device_id": "fake_fez",
+          "options": {},
+          "type": "device"
+        }
+      ],
+      "schema_version": 1
+    },
+    "schema_status": "validated"
+  },
+  "limitations": [
+    "Backend predictions are not presented as exact ground truth.",
+    "Dynamical decoupling is not claimed to reverse amplitude damping.",
+    "The regularized response inverse is non-CPTP and can amplify finite-shot uncertainty.",
+    "Correction quality is limited by mismatch between hardware noise and the reconstructed generator ansatz.",
+    "On devices larger than the four-qubit fake_fez target, the cloud transpiler's final physical layout must be verified before interpreting edge-specific correction."
+  ],
+  "model_inference": {
+    "primary_model_kind": "ridge",
+    "qnn_classical_readout": null,
+    "qnn_execution_backend": null,
+    "requested_mode": "ridge",
+    "ridge_executed": true,
+    "trained_qnn_circuits_executed": false
+  },
+  "raw_characterization_mode": {
+    "generator_reconstruction_input": "raw counts corrected only by independently measured assignment matrices",
+    "raw_counts_preserved": true,
+    "readout_calibration_circuits": 26,
+    "use_mitigation": false
+  },
+  "readout_calibration": {
+    "artifact": "artifacts/haiqu/readout_calibration.json",
+    "regularization": 1e-06,
+    "single_qubit_matrices": 5,
+    "two_qubit_matrices": 4,
+    "validation_passed": true
+  },
+  "selected_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "selected_subgraph": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tracks": {
+    "algorithm_benchmark": "results/haiqu/final_benchmark.csv",
+    "algorithm_benchmark_instances": "results/haiqu/algorithm_benchmark_details.csv",
+    "benchmark_seed_summary": "results/haiqu/benchmark_seed_summary.csv",
+    "correction_validation": "results/haiqu/correction_validation.csv",
+    "depth_sweep_benchmark": "results/haiqu/depth_sweep_benchmark.csv",
+    "empirical_device_characterization": "results/haiqu/mitigation_comparison.csv",
+    "learned_response_models": "artifacts/haiqu/algorithm_response_models.json",
+    "presentation_benchmark": "results/haiqu/presentation_benchmark.csv",
+    "readout_calibration": "artifacts/haiqu/readout_calibration.json",
+    "rejected_generator_ablation": "results/haiqu/rejected_generator_ablation.csv",
+    "synthetic_ground_truth": "results/haiqu/synthetic_ground_truth.csv"
+  },
+  "transpilation": {
+    "optimization_level": 2,
+    "seed_transpiler": 2026
+  }
+}

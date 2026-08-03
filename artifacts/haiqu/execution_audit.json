@@ -1,0 +1,23 @@
+{
+  "confidence_interval_method": "not_available_fewer_than_two_repeats",
+  "confidence_intervals_available": false,
+  "depth_sweep_method": "cx_cx_identity_folding",
+  "device_id": "fake_fez",
+  "evaluation_repeats": 1,
+  "execution_mode": "local_fallback",
+  "generator_only_ablation_in_main_figure": false,
+  "generator_only_ablation_role": "rejected diagnostic with negativity and simplex projection audit",
+  "learned_generator_applied_fraction": 0.0,
+  "model_mode_requested": "ridge",
+  "paired_improvements_reported": true,
+  "qnn_circuit_count": 0,
+  "qnn_executed": false,
+  "qnn_expected_circuit_count": 7,
+  "ridge_executed": true,
+  "schema_version": "0.6",
+  "shots": 256,
+  "two_qubit_depths": [
+    2
+  ],
+  "validation_repeats": 1
+}

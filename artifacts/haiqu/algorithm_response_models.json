@@ -1,0 +1,942 @@
+{
+  "algorithm": "grover_2q_exhaustive",
+  "correction_enabled": false,
+  "correction_ready": true,
+  "correction_stack": {
+    "added_physical_correction_gates": 0,
+    "alpha": "propagated after every modeled gate and included in the regularized algorithm-response inverse",
+    "gamma": "included in the regularized algorithm-response inverse",
+    "haiqu": "optional SDK mitigation layer; local readout inversion is not duplicated after Haiqu advanced mitigation",
+    "kappa_down": "non-unital component included in the same response inverse",
+    "readout": "independent 1Q/2Q assignment calibration; applied to raw diagnostics before the clean-feature Ridge model and to Grover distributions before generator inversion",
+    "selection": "the generator inverse is enabled independently per physical edge on validation data; rejected edges retain the readout-only result"
+  },
+  "correction_unavailable_reason": null,
+  "depth_sweep_method": "cx_cx_identity_folding",
+  "evaluation": {
+    "held_out_from_validation": true,
+    "repeats": 1,
+    "seeds": [
+      22027
+    ]
+  },
+  "generator_enabled_edge_depths": [],
+  "generator_enabled_edges": [],
+  "models": {
+    "q0-q1@d2q2": {
+      "algorithm": "grover_2q_exhaustive",
+      "bitstring_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "coherent_compensation_in_forward_circuit": false,
+      "component_norms": {
+        "alpha": 0.17505768927110943,
+        "gamma": 0.02659527939651682,
+        "kappa_down": 0.01806562476996916
+      },
+      "condition_number": 1.5506559403383504,
+      "edge_key": "q0-q1",
+      "inverse_overhead_l1": 1.5701284409284961,
+      "predicted_corrected_success": 0.9569014619808733,
+      "predicted_raw_success": 0.7789208350378495,
+      "regularization": 0.03,
+      "regularized_inverse_matrix": [
+        [
+          1.2705820388743734,
+          -0.13582295978357212,
+          -0.13242245009989745,
+          -0.03502841082762016
+        ],
+        [
+          -0.12664222563588362,
+          1.2570118114972384,
+          -0.04289752554620253,
+          -0.11372149417783244
+        ],
+        [
+          -0.11968824731356528,
+          -0.0435668324943607,
+          1.2411064278367216,
+          -0.10531286866674947
+        ],
+        [
+          -0.05321592910467387,
+          -0.10688097101418112,
+          -0.09499363974309138,
+          1.2249876274222653
+        ]
+      ],
+      "response_matrix": [
+        [
+          0.7664175215681867,
+          0.09818169605345135,
+          0.0965430447019596,
+          0.04142435540277137
+        ],
+        [
+          0.09337675701091418,
+          0.7737602361381195,
+          0.04524232389903297,
+          0.08554265802582943
+        ],
+        [
+          0.089693263495287,
+          0.04563861411401635,
+          0.7829949708252163,
+          0.08052237495152356
+        ],
+        [
+          0.05051245792561228,
+          0.08241945369441268,
+          0.07521966057379119,
+          0.7925106116198757
+        ]
+      ],
+      "response_source": "reconstructed_generator_forward_model; no benchmark counts used",
+      "semantics": "regularized full-generator non-CPTP error mitigation; no added correction gates; not fault-tolerant QEC",
+      "two_qubit_depth": 2,
+      "validation_passed": true,
+      "validation_rule": "finite inverse, condition number < 1e6, and no more than 0.05 predicted mean-success loss before empirical validation"
+    },
+    "q1-q2@d2q2": {
+      "algorithm": "grover_2q_exhaustive",
+      "bitstring_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "coherent_compensation_in_forward_circuit": false,
+      "component_norms": {
+        "alpha": 0.20850690252851095,
+        "gamma": 0.018958973410435703,
+        "kappa_down": 0.01765271014142665
+      },
+      "condition_number": 1.5123947181941026,
+      "edge_key": "q1-q2",
+      "inverse_overhead_l1": 1.5262894483822462,
+      "predicted_corrected_success": 0.9591861887331133,
+      "predicted_raw_success": 0.7947324322255995,
+      "regularization": 0.03,
+      "regularized_inverse_matrix": [
+        [
+          1.2248218340698425,
+          -0.11499929425986898,
+          -0.12856768780649938,
+          -0.02485598888543286
+        ],
+        [
+          -0.10835956846535177,
+          1.1992769340368419,
+          -0.0337466866585075,
+          -0.10509546711905
+        ],
+        [
+          -0.10629596080505821,
+          -0.032683319778915365,
+          1.2481711892000436,
+          -0.11832323975972174
+        ],
+        [
+          -0.038712328947285095,
+          -0.0800100690709373,
+          -0.1158038847171958,
+          1.2186427714409822
+        ]
+      ],
+      "response_matrix": [
+        [
+          0.7941960418293703,
+          0.08830526904275109,
+          0.09487344080071254,
+          0.03435102146874246
+        ],
+        [
+          0.08479312849342761,
+          0.8100985747109642,
+          0.039569589200150954,
+          0.08129643379023818
+        ],
+        [
+          0.08117673515911913,
+          0.036315190490144304,
+          0.7783143336035326,
+          0.08803176598248855
+        ],
+        [
+          0.0398340945180829,
+          0.0652809657561404,
+          0.08724263639560392,
+          0.7963207787585308
+        ]
+      ],
+      "response_source": "reconstructed_generator_forward_model; no benchmark counts used",
+      "semantics": "regularized full-generator non-CPTP error mitigation; no added correction gates; not fault-tolerant QEC",
+      "two_qubit_depth": 2,
+      "validation_passed": true,
+      "validation_rule": "finite inverse, condition number < 1e6, and no more than 0.05 predicted mean-success loss before empirical validation"
+    },
+    "q2-q3@d2q2": {
+      "algorithm": "grover_2q_exhaustive",
+      "bitstring_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "coherent_compensation_in_forward_circuit": false,
+      "component_norms": {
+        "alpha": 0.17196014573147686,
+        "gamma": 0.02151260778832627,
+        "kappa_down": 0.01771093722001816
+      },
+      "condition_number": 1.445719831682495,
+      "edge_key": "q2-q3",
+      "inverse_overhead_l1": 1.4403017751005103,
+      "predicted_corrected_success": 0.9625279744315479,
+      "predicted_raw_success": 0.8198363849840115,
+      "regularization": 0.03,
+      "regularized_inverse_matrix": [
+        [
+          1.2055577603490433,
+          -0.10853499730115039,
+          -0.10843108426800314,
+          -0.016799972628926862
+        ],
+        [
+          -0.10419202548868055,
+          1.1821501645603483,
+          -0.02287096627227395,
+          -0.09050243591893917
+        ],
+        [
+          -0.10445044364707365,
+          -0.018239701225517893,
+          1.1808295163666342,
+          -0.08974686764006408
+        ],
+        [
+          -0.026101545615712842,
+          -0.08424316497862548,
+          -0.07854135413103222,
+          1.1676088369397282
+        ]
+      ],
+      "response_matrix": [
+        [
+          0.8059724438899726,
+          0.08407367992223201,
+          0.08429174036132595,
+          0.025393024475947577
+        ],
+        [
+          0.08190425556557057,
+          0.8213376051019385,
+          0.029007539681750922,
+          0.07274585319655799
+        ],
+        [
+          0.08184770114862525,
+          0.02605488879879581,
+          0.8219995004217686,
+          0.07182513180512821
+        ],
+        [
+          0.030275599395831625,
+          0.06853382617703366,
+          0.06470121953515455,
+          0.8300359905223663
+        ]
+      ],
+      "response_source": "reconstructed_generator_forward_model; no benchmark counts used",
+      "semantics": "regularized full-generator non-CPTP error mitigation; no added correction gates; not fault-tolerant QEC",
+      "two_qubit_depth": 2,
+      "validation_passed": true,
+      "validation_rule": "finite inverse, condition number < 1e6, and no more than 0.05 predicted mean-success loss before empirical validation"
+    },
+    "q3-q4@d2q2": {
+      "algorithm": "grover_2q_exhaustive",
+      "bitstring_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "coherent_compensation_in_forward_circuit": false,
+      "component_norms": {
+        "alpha": 0.18169873247492604,
+        "gamma": 0.02568644748676272,
+        "kappa_down": 0.0050718028483885055
+      },
+      "condition_number": 1.4099623356777673,
+      "edge_key": "q3-q4",
+      "inverse_overhead_l1": 1.4045981495243671,
+      "predicted_corrected_success": 0.9641050783879416,
+      "predicted_raw_success": 0.8327626371283418,
+      "regularization": 0.03,
+      "regularized_inverse_matrix": [
+        [
+          1.1875111693881557,
+          -0.10277980713476166,
+          -0.08806727401344387,
+          -0.013741624249587194
+        ],
+        [
+          -0.10540039465665145,
+          1.168879081860016,
+          -0.015644837310671362,
+          -0.07152364862335302
+        ],
+        [
+          -0.09082365949114916,
+          -0.018359985940088544,
+          1.1621293386118325,
+          -0.08529344024755611
+        ],
+        [
+          -0.02086292598841073,
+          -0.07706166091867618,
+          -0.08742944927976387,
+          1.141952073042444
+        ]
+      ],
+      "response_matrix": [
+        [
+          0.8171239029129096,
+          0.08113313579699906,
+          0.07041958702299972,
+          0.020804944475721374
+        ],
+        [
+          0.0831282768757911,
+          0.8299099001999952,
+          0.02253700256170567,
+          0.059493634668819594
+        ],
+        [
+          0.07299080087215344,
+          0.024756985915851328,
+          0.8347227643855875,
+          0.07040743984058437
+        ],
+        [
+          0.026757019339145843,
+          0.06419997808715455,
+          0.07232064602970703,
+          0.8492939810148746
+        ]
+      ],
+      "response_source": "reconstructed_generator_forward_model; no benchmark counts used",
+      "semantics": "regularized full-generator non-CPTP error mitigation; no added correction gates; not fault-tolerant QEC",
+      "two_qubit_depth": 2,
+      "validation_passed": true,
+      "validation_rule": "finite inverse, condition number < 1e6, and no more than 0.05 predicted mean-success loss before empirical validation"
+    }
+  },
+  "readout_calibration": {
+    "calibration_shots": 256,
+    "regularization": 1e-06,
+    "schema_version": "1.0",
+    "semantics": "independently measured assignment correction; raw counts retained; regularized inverse projected to the probability simplex",
+    "single_qubit": {
+      "q0": {
+        "assignment_matrix": [
+          [
+            0.9921875,
+            0.00390625
+          ],
+          [
+            0.0078125,
+            0.99609375
+          ]
+        ],
+        "bitstring_order": [
+          "0",
+          "1"
+        ],
+        "condition_number": 1.012503106745506,
+        "inverse_overhead_l1": 1.0158092326690087,
+        "key": "q0",
+        "mean_assignment_fidelity": 0.994140625,
+        "physical_qubits": [
+          0
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.007904114327478,
+            -0.003952553171620911
+          ],
+          [
+            -0.007905118341530574,
+            1.0039515571564277
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q1": {
+        "assignment_matrix": [
+          [
+            0.9921875,
+            0.015625
+          ],
+          [
+            0.0078125,
+            0.984375
+          ]
+        ],
+        "bitstring_order": [
+          "0",
+          "1"
+        ],
+        "condition_number": 1.025314453048712,
+        "inverse_overhead_l1": 1.0319989098046713,
+        "key": "q1",
+        "mean_assignment_fidelity": 0.98828125,
+        "physical_qubits": [
+          1
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.007998975355922,
+            -0.015999959029827128
+          ],
+          [
+            -0.007999967226938713,
+            1.0159989507748441
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q2": {
+        "assignment_matrix": [
+          [
+            0.99609375,
+            0.0
+          ],
+          [
+            0.00390625,
+            1.0
+          ]
+        ],
+        "bitstring_order": [
+          "0",
+          "1"
+        ],
+        "condition_number": 1.005550432859543,
+        "inverse_overhead_l1": 1.0078421175555774,
+        "key": "q2",
+        "mean_assignment_fidelity": 0.998046875,
+        "physical_qubits": [
+          2
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.0039205568021297,
+            3.936939451859616e-09
+          ],
+          [
+            -0.003921560753447634,
+            0.9999989999856215
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q3": {
+        "assignment_matrix": [
+          [
+            0.984375,
+            0.0234375
+          ],
+          [
+            0.015625,
+            0.9765625
+          ]
+        ],
+        "bitstring_order": [
+          "0",
+          "1"
+        ],
+        "condition_number": 1.0414718005361046,
+        "inverse_overhead_l1": 1.0487793438264639,
+        "key": "q3",
+        "mean_assignment_fidelity": 0.98046875,
+        "physical_qubits": [
+          3
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.016259111745238,
+            -0.02439017617605825
+          ],
+          [
+            -0.016260103349780723,
+            1.0243891676504056
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q4": {
+        "assignment_matrix": [
+          [
+            1.0,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.9921875
+          ]
+        ],
+        "bitstring_order": [
+          "0",
+          "1"
+        ],
+        "condition_number": 1.0111536426969197,
+        "inverse_overhead_l1": 1.0157469917530948,
+        "key": "q4",
+        "mean_assignment_fidelity": 0.99609375,
+        "physical_qubits": [
+          4
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            0.9999989999389999,
+            -0.007873999875047437
+          ],
+          [
+            7.935999837415595e-09,
+            1.0078729918780474
+          ]
+        ],
+        "validation_passed": true
+      }
+    },
+    "two_qubit": {
+      "q0-q1": {
+        "assignment_matrix": [
+          [
+            0.98046875,
+            0.01953125,
+            0.02734375,
+            0.0
+          ],
+          [
+            0.0078125,
+            0.96875,
+            0.0,
+            0.0
+          ],
+          [
+            0.01171875,
+            0.0,
+            0.9609375,
+            0.015625
+          ],
+          [
+            0.0,
+            0.01171875,
+            0.01171875,
+            0.984375
+          ]
+        ],
+        "bitstring_order": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "condition_number": 1.0631022870543168,
+        "inverse_overhead_l1": 1.082879523969164,
+        "key": "q0-q1",
+        "mean_assignment_fidelity": 0.9736328125,
+        "physical_qubits": [
+          0,
+          1
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.0204303475049543,
+            -0.020578738328770024,
+            -0.029042212982257797,
+            0.00046098615380899303
+          ],
+          [
+            -0.008229246540334224,
+            1.0324229212078293,
+            0.00023420988649387758,
+            -3.704712102927998e-06
+          ],
+          [
+            -0.012448230790534042,
+            0.000450895355590304,
+            1.0412050450244985,
+            -0.016527034024954843
+          ],
+          [
+            0.0002461595034264417,
+            -0.01229610415073091,
+            -0.01239805607591378,
+            1.0160687613200499
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q1-q2": {
+        "assignment_matrix": [
+          [
+            0.984375,
+            0.015625,
+            0.00390625,
+            0.0
+          ],
+          [
+            0.015625,
+            0.98046875,
+            0.0,
+            0.00390625
+          ],
+          [
+            0.0,
+            0.0,
+            0.98046875,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.00390625,
+            0.015625,
+            0.98828125
+          ]
+        ],
+        "bitstring_order": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "condition_number": 1.0363487486086074,
+        "inverse_overhead_l1": 1.0404520489858942,
+        "key": "q1-q2",
+        "mean_assignment_fidelity": 0.9833984375,
+        "physical_qubits": [
+          1,
+          2
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.0161290085845922,
+            -0.016193639893229687,
+            -0.004049848740133482,
+            9.602080002379468e-05
+          ],
+          [
+            -0.016193512375747586,
+            1.0201933901565385,
+            0.00012879299246233865,
+            -0.004033394771279526
+          ],
+          [
+            -5.058688247261114e-07,
+            3.2134238753012194e-05,
+            1.0200477649594348,
+            -0.00806372080458139
+          ],
+          [
+            6.401374532513692e-05,
+            -0.004032884697372977,
+            -0.01612772161520067,
+            1.012000103067156
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q2-q3": {
+        "assignment_matrix": [
+          [
+            0.984375,
+            0.01171875,
+            0.0390625,
+            0.0
+          ],
+          [
+            0.0078125,
+            0.9765625,
+            0.0,
+            0.015625
+          ],
+          [
+            0.0078125,
+            0.0,
+            0.94140625,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.01171875,
+            0.01953125,
+            0.9765625
+          ]
+        ],
+        "bitstring_order": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "condition_number": 1.0823795216020966,
+        "inverse_overhead_l1": 1.1268883243290932,
+        "key": "q2-q3",
+        "mean_assignment_fidelity": 0.9697265625,
+        "physical_qubits": [
+          2,
+          3
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.01630357799013,
+            -0.012202013798962484,
+            -0.04218126767340477,
+            0.0005326804541556383
+          ],
+          [
+            -0.008134668814780498,
+            1.0242932703264978,
+            0.0006776631319674911,
+            -0.01639408352014322
+          ],
+          [
+            -0.008436209799858183,
+            0.00020329753561783103,
+            1.0627659736872574,
+            -0.008505348483055645
+          ],
+          [
+            0.00026633917799954646,
+            -0.01229555509334559,
+            -0.02126341983646355,
+            1.0243657611121708
+          ]
+        ],
+        "validation_passed": true
+      },
+      "q3-q4": {
+        "assignment_matrix": [
+          [
+            0.9921875,
+            0.01171875,
+            0.00390625,
+            0.0
+          ],
+          [
+            0.0078125,
+            0.98828125,
+            0.0,
+            0.00390625
+          ],
+          [
+            0.0,
+            0.0,
+            0.97265625,
+            0.01171875
+          ],
+          [
+            0.0,
+            0.0,
+            0.0234375,
+            0.984375
+          ]
+        ],
+        "bitstring_order": [
+          "00",
+          "01",
+          "10",
+          "11"
+        ],
+        "condition_number": 1.0429927831571872,
+        "inverse_overhead_l1": 1.0570713612597942,
+        "key": "q3-q4",
+        "mean_assignment_fidelity": 0.984375,
+        "physical_qubits": [
+          3,
+          4
+        ],
+        "regularization": 1e-06,
+        "regularized_inverse_matrix": [
+          [
+            1.0079671030748023,
+            -0.011952158721647326,
+            -0.0040503611323184,
+            9.564758669749597e-05
+          ],
+          [
+            -0.007968099041766085,
+            1.0119511546281101,
+            0.00012880041277220708,
+            -0.004017208373134955
+          ],
+          [
+            4.201239910789402e-09,
+            -2.336125761991169e-10,
+            1.028406371787827,
+            -0.012242894777126211
+          ],
+          [
+            -2.3048731410271141e-10,
+            4.136473857796901e-09,
+            -0.024485827926876702,
+            1.0161634642194783
+          ]
+        ],
+        "validation_passed": true
+      }
+    },
+    "validation_passed": true
+  },
+  "readout_only_fallback_edge_depths": [
+    "q0-q1@d2q2",
+    "q1-q2@d2q2",
+    "q2-q3@d2q2",
+    "q3-q4@d2q2"
+  ],
+  "readout_only_fallback_edges": [
+    "q0-q1",
+    "q1-q2",
+    "q2-q3",
+    "q3-q4"
+  ],
+  "response_regularization": 0.03,
+  "schema_version": "0.5",
+  "semantics": "validated algorithm-level error cancellation and mitigation; not fault-tolerant QEC",
+  "targets": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "transpilation_optimization_level": 2,
+  "two_qubit_depths": [
+    2
+  ],
+  "uses_benchmark_counts_for_response_fit": false,
+  "uses_evaluation_counts_for_stack_selection": false,
+  "validation": {
+    "ci95_high": null,
+    "ci95_low": null,
+    "correction_enabled_for_held_out_evaluation": false,
+    "criterion": "applied separately per physical edge: mean paired TVD improvement over readout-only > 0 and at least half of validation repeats improve; mean inverse negativity <= 0.05; mean simplex correction <= 0.10",
+    "evaluation_counts_used_for_selection": false,
+    "failure_reason": "empirical validation failed the paired-improvement or inverse-audit safety criterion",
+    "generator_enabled_edge_depths": [],
+    "generator_enabled_edges": [],
+    "generator_response_models_ready": true,
+    "generator_response_models_valid": true,
+    "inverse_audit_safe": false,
+    "mean_incremental_tvd_improvement": 0.012043823276022405,
+    "mean_inverse_raw_negativity": 0.2184093639749799,
+    "mean_simplex_projection_l1": 0.4076910068182604,
+    "per_edge_depth": {
+      "q0-q1@d2q2": {
+        "ci95_high": null,
+        "ci95_low": null,
+        "edge_key": "q0-q1",
+        "fallback": "readout_only",
+        "generator_enabled": false,
+        "inverse_audit_safe": false,
+        "mean_incremental_tvd_improvement": 0.020352770405712307,
+        "mean_inverse_raw_negativity": 0.24974494230766797,
+        "mean_simplex_projection_l1": 0.47036121093725564,
+        "positive_repeat_fraction": 1.0,
+        "requested_two_qubit_depth": 2,
+        "response_validation_passed": true,
+        "statistically_significant_at_95_percent": false,
+        "validation_repeat_improvements": [
+          0.020352770405712307
+        ]
+      },
+      "q1-q2@d2q2": {
+        "ci95_high": null,
+        "ci95_low": null,
+        "edge_key": "q1-q2",
+        "fallback": "readout_only",
+        "generator_enabled": false,
+        "inverse_audit_safe": false,
+        "mean_incremental_tvd_improvement": 0.008752072278307536,
+        "mean_inverse_raw_negativity": 0.24046169402276674,
+        "mean_simplex_projection_l1": 0.45179200081359006,
+        "positive_repeat_fraction": 1.0,
+        "requested_two_qubit_depth": 2,
+        "response_validation_passed": true,
+        "statistically_significant_at_95_percent": false,
+        "validation_repeat_improvements": [
+          0.008752072278307536
+        ]
+      },
+      "q2-q3@d2q2": {
+        "ci95_high": null,
+        "ci95_low": null,
+        "edge_key": "q2-q3",
+        "fallback": "readout_only",
+        "generator_enabled": false,
+        "inverse_audit_safe": false,
+        "mean_incremental_tvd_improvement": 0.008144675852045622,
+        "mean_inverse_raw_negativity": 0.20276983417201327,
+        "mean_simplex_projection_l1": 0.3764154657791788,
+        "positive_repeat_fraction": 1.0,
+        "requested_two_qubit_depth": 2,
+        "response_validation_passed": true,
+        "statistically_significant_at_95_percent": false,
+        "validation_repeat_improvements": [
+          0.008144675852045622
+        ]
+      },
+      "q3-q4@d2q2": {
+        "ci95_high": null,
+        "ci95_low": null,
+        "edge_key": "q3-q4",
+        "fallback": "readout_only",
+        "generator_enabled": false,
+        "inverse_audit_safe": false,
+        "mean_incremental_tvd_improvement": 0.010925774568024156,
+        "mean_inverse_raw_negativity": 0.1806609853974717,
+        "mean_simplex_projection_l1": 0.33219534974301734,
+        "positive_repeat_fraction": 1.0,
+        "requested_two_qubit_depth": 2,
+        "response_validation_passed": true,
+        "statistically_significant_at_95_percent": false,
+        "validation_repeat_improvements": [
+          0.010925774568024156
+        ]
+      }
+    },
+    "positive_repeat_fraction": 1.0,
+    "readout_calibration_validation_passed": true,
+    "readout_only_fallback_edge_depths": [
+      "q0-q1@d2q2",
+      "q1-q2@d2q2",
+      "q2-q3@d2q2",
+      "q3-q4@d2q2"
+    ],
+    "readout_only_fallback_edges": [
+      "q0-q1",
+      "q1-q2",
+      "q2-q3",
+      "q3-q4"
+    ],
+    "selection_split": "independent simulator seeds or repeated cloud batches",
+    "statistically_significant_at_95_percent": false,
+    "validation_repeats": 1,
+    "validation_seeds": [
+      12027
+    ]
+  }
+}

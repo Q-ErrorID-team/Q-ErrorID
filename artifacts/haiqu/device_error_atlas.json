@@ -1,0 +1,252 @@
+{
+  "calibration_timestamp": "2026-07-25T07:48:41.107422+00:00",
+  "device_id": "fake_fez",
+  "metadata": {
+    "execution_source": "local_qiskit_fake_backend",
+    "generator_fit_input": "independently_readout_calibrated_features",
+    "ground_truth_known": false,
+    "raw_counts_preserved": true,
+    "readout_calibration_validation_passed": true,
+    "track": "empirical_device_characterization"
+  },
+  "physical_qubits": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "single_qubit_channels": {
+    "0": {
+      "alpha": {
+        "X": -0.028125416907671896,
+        "Y": -0.03815884808854001,
+        "Z": 0.004494782097465011
+      },
+      "amplitude_damping": 0.013163868776313115,
+      "coherent_magnitude": 0.047616591958878386,
+      "dominant_pauli_generator": "alpha_Y",
+      "gamma": {
+        "X": 0.005667177549129463,
+        "Y": 0.0024115530470533598,
+        "Z": 0.003133992014469218
+      },
+      "kappa_down": {
+        "down": 0.013163868776313115
+      },
+      "model_source": "artifact:ridge_1q_256_readout_corrected.npz",
+      "physical_qubits": [
+        0
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.006910455514571106,
+      "trained_model": true
+    },
+    "1": {
+      "alpha": {
+        "X": -0.024720321951384412,
+        "Y": 0.061067622290301604,
+        "Z": 0.053277451236343365
+      },
+      "amplitude_damping": 0.004901755993656047,
+      "coherent_magnitude": 0.0847280096533135,
+      "dominant_pauli_generator": "alpha_Y",
+      "gamma": {
+        "X": 0.0022771764983770607,
+        "Y": 0.003947377251896669,
+        "Z": 0.00761302440975235
+      },
+      "kappa_down": {
+        "down": 0.004901755993656047
+      },
+      "model_source": "artifact:ridge_1q_256_readout_corrected.npz",
+      "physical_qubits": [
+        1
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.008872736930453715,
+      "trained_model": true
+    },
+    "2": {
+      "alpha": {
+        "X": -0.05430348044989042,
+        "Y": 0.06946720507649795,
+        "Z": -0.03774061043600736
+      },
+      "amplitude_damping": 0.012750954147770603,
+      "coherent_magnitude": 0.09591097041628929,
+      "dominant_pauli_generator": "alpha_Y",
+      "gamma": {
+        "X": 0.004613810235518897,
+        "Y": 0.0010362046154758046,
+        "Z": 0.004193562963915692
+      },
+      "kappa_down": {
+        "down": 0.012750954147770603
+      },
+      "model_source": "artifact:ridge_1q_256_readout_corrected.npz",
+      "physical_qubits": [
+        2
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.006320358789407264,
+      "trained_model": true
+    },
+    "3": {
+      "alpha": {
+        "X": 0.025189301429252336,
+        "Y": -0.006356921479490761,
+        "Z": 0.03688822781384159
+      },
+      "amplitude_damping": 0.004959983072247556,
+      "coherent_magnitude": 0.04511820816960732,
+      "dominant_pauli_generator": "alpha_Z",
+      "gamma": {
+        "X": 0.00608229098358261,
+        "Y": 0.0,
+        "Z": 0.004049185847148475
+      },
+      "kappa_down": {
+        "down": 0.004959983072247556
+      },
+      "model_source": "artifact:ridge_1q_256_readout_corrected.npz",
+      "physical_qubits": [
+        3
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.007306857712705088,
+      "trained_model": true
+    },
+    "4": {
+      "alpha": {
+        "X": 0.019176595692941188,
+        "Y": 0.0328526172111085,
+        "Z": -0.009544985737817133
+      },
+      "amplitude_damping": 0.00011181977614094923,
+      "coherent_magnitude": 0.039219166650061366,
+      "dominant_pauli_generator": "alpha_Y",
+      "gamma": {
+        "X": 0.005785079592941283,
+        "Y": 0.0037224587907386635,
+        "Z": 0.004011357245200384
+      },
+      "kappa_down": {
+        "down": 0.00011181977614094923
+      },
+      "model_source": "artifact:ridge_1q_256_readout_corrected.npz",
+      "physical_qubits": [
+        4
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.007963343035059764,
+      "trained_model": true
+    }
+  },
+  "two_qubit_channels": {
+    "q0-q1": {
+      "alpha": {
+        "IZ": -0.0002718104107188382,
+        "ZI": 0.0417596479489045,
+        "ZX": 0.006792526556443875,
+        "ZZ": 0.005858955762127005
+      },
+      "amplitude_damping": 0.0,
+      "coherent_magnitude": 0.042713087658917556,
+      "dominant_pauli_generator": "alpha_ZI",
+      "gamma": {
+        "IZ": 0.006474367474120054,
+        "ZI": 0.007175550031260027,
+        "ZX": 0.0021698579924699334,
+        "ZZ": 0.0043343959323161076
+      },
+      "kappa_down": {},
+      "model_source": "artifact:ridge_2q_256_readout_corrected.npz",
+      "physical_qubits": [
+        0,
+        1
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.010812086951491998,
+      "trained_model": true
+    },
+    "q1-q2": {
+      "alpha": {
+        "IZ": 0.0010903007076952763,
+        "ZI": 0.012008988029064221,
+        "ZX": 0.017324118488223333,
+        "ZZ": -0.01819591909375036
+      },
+      "amplitude_damping": 0.0,
+      "coherent_magnitude": 0.027867922458908182,
+      "dominant_pauli_generator": "alpha_ZZ",
+      "gamma": {
+        "IZ": 0.0006622100108004507,
+        "ZI": 0.0015944944121353225,
+        "ZX": 0.0,
+        "ZZ": 0.003346774604247099
+      },
+      "kappa_down": {},
+      "model_source": "artifact:ridge_2q_256_readout_corrected.npz",
+      "physical_qubits": [
+        1,
+        2
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.003765877690574725,
+      "trained_model": true
+    },
+    "q2-q3": {
+      "alpha": {
+        "IZ": -0.02227634396512609,
+        "ZI": 0.00700805926020635,
+        "ZX": -0.012019143663824703,
+        "ZZ": 0.016337579964674512
+      },
+      "amplitude_damping": 0.0,
+      "coherent_magnitude": 0.030930967145580253,
+      "dominant_pauli_generator": "alpha_IZ",
+      "gamma": {
+        "IZ": 0.006384900851799196,
+        "ZI": 0.000703025772814508,
+        "ZX": 0.0022245136975040224,
+        "ZZ": 0.003996214511480559
+      },
+      "kappa_down": {},
+      "model_source": "artifact:ridge_2q_256_readout_corrected.npz",
+      "physical_qubits": [
+        2,
+        3
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.007885391286213916,
+      "trained_model": true
+    },
+    "q3-q4": {
+      "alpha": {
+        "IZ": 0.013760967708232489,
+        "ZI": -0.08468962378199561,
+        "ZX": 0.03136122631653077,
+        "ZZ": -0.03367507742820054
+      },
+      "amplitude_damping": 0.0,
+      "coherent_magnitude": 0.09736135765525736,
+      "dominant_pauli_generator": "alpha_ZI",
+      "gamma": {
+        "IZ": 0.0009730210857580527,
+        "ZI": 0.002540440468854571,
+        "ZX": 0.0,
+        "ZZ": 0.010054729649202903
+      },
+      "kappa_down": {},
+      "model_source": "artifact:ridge_2q_256_readout_corrected.npz",
+      "physical_qubits": [
+        3,
+        4
+      ],
+      "recommended_mitigation": "calibration/frame coherent correction, then validate",
+      "stochastic_magnitude": 0.010416246738997869,
+      "trained_model": true
+    }
+  }
+}

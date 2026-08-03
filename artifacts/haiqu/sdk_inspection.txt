@@ -1,0 +1,46 @@
+Command:
+  .venv/bin/python -m pip show haiqu-sdk
+
+Name: haiqu-sdk
+Version: 1.3.1
+Summary: Python SDK for Haiqu quantum cloud — circuit analytics, error mitigation, and hybrid quantum application execution
+Home-page: https://haiqu.ai
+License-Expression: Apache-2.0
+Location: .venv/lib/python3.12/site-packages
+Requires: beartype, cplex, hashable-list, ipywidgets, kaleido, ordered-set, pandas, plotly, pydantic, qiskit, qiskit-addon-obp, qiskit-addon-utils, qiskit-aer, qiskit-optimization, qiskit-qasm3-import, qiskit_algorithms, qiskit_ibm_runtime, requests, sympy, tabulate
+
+Inspected public signatures in 1.3.1:
+  haiqu.login(api_access_key=None, edge_uri=None, raise_on_error=False)
+  haiqu.init(experiment_ctx, experiment_description="", log_source_code=False)
+  haiqu.log(parent_ctx=None, child_ctx=None, name=None, description=None)
+  haiqu.list_devices(widget=True, pandas=False)
+  haiqu.list_simulators(widget=True, pandas=False)
+  haiqu.get_device(device_id)
+  haiqu.transpile(circuits, device, job_name=None, job_description=None, **options)
+  haiqu.run(circuits, parameters=None, shots=1000, observables=None,
+            device=None, device_id=None, options=None, use_mitigation=False,
+            use_packing=False, pack_size=None, job_name=None,
+            job_description=None, dry_run=False)
+  haiqu.vector_loading(data, num_qubits=None, num_layers=2,
+                       truncation_cutoff=1e-6, fine_tuning_iterations=20,
+                       max_time=900, name=None, job_description=None)
+  haiqu.flow(program, circuits, shots=1000, parameters=None, observables=None,
+             job_name=None, job_description=None, device_credentials=None,
+             dry_run=False)
+
+Inspected run.error_mitigation_options keys:
+  dynamical_decoupling
+  readout_mitigation
+  readout_mitigation_options
+  noise_tailoring
+  advanced_mitigation
+
+Inspected installed official examples/docstrings:
+  haiqu.login / haiqu.init experiment tracking
+  fake_fez and aer_simulator discovery
+  transpile with multiple seed_transpiler values
+  run with distributions and observables
+  vector_loading and opaque HaiquCircuitGate
+  HybridProgram with InputLayer, TranspilationLayer,
+  DistributionMitigationLayer, and DeviceLayer
+

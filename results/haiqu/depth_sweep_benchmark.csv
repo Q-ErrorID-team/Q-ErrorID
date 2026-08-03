@@ -1,0 +1,4 @@
+scenario,requested_two_qubit_depth,repeat_count,problem_count_per_repeat,tvd_to_ideal,tvd_ci95_low,tvd_ci95_high,success_probability,success_probability_ci95_low,success_probability_ci95_high,ci_method,depth_sweep_method,learned_generator_applied_fraction
+raw_haiqu_execution,2,1,16,0.02880859375,,,0.97119140625,,,not_available_fewer_than_two_repeats,cx_cx_identity_folding,0.0
+calibrated_readout_mitigation_only,2,1,16,0.011183160861604008,,,0.988816839138396,,,not_available_fewer_than_two_repeats,cx_cx_identity_folding,0.0
+learned_readout_plus_generator_correction,2,1,16,0.011183160861604008,,,0.988816839138396,,,not_available_fewer_than_two_repeats,cx_cx_identity_folding,0.0
